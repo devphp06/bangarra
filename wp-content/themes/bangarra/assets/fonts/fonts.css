@@ -1,0 +1,9 @@
+@font-face {
+    font-family: PTnarrow-bold;
+    src: url(fonts/PTSansNarrow-Bold.ttf);
+}
+
+@font-face {
+    font-family: PTnarrow-regular;
+    src: url(fonts/PTSansNarrow-Regular.ttf);
+}

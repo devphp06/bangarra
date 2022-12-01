@@ -1,0 +1,191 @@
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+a{text-decoration: none;}
+:root{
+    --primary-color: #0B3847;
+    --active-color: #F05822;
+}
+.banner-heading{font-family: PTnarrow-regular, sans-serif; font-size: 70px; color: #fff;}
+.primary-color{color: #0B3847;}
+.primary-background{background-color: #0B3847;}
+.primary-light{color: #B8DCEE;}
+.active-color{color: #F05822;}
+.active-background{background-color: #F05822;}
+.bg-gray{background-color: #f0f3f4;}
+.common-primary-heading{font-family: PTnarrow-bold, sans-serif; font-size: 50px; margin-bottom: 40px;}
+.theme-btn{background-color: #F05822; color: #fff; border-radius: 50px; font-size: 26px; font-weight: 700; padding: 10px 30px;position: relative; filter: none; transition: .3s;}
+/* .theme-btn::after{content: ''; background-color: #CB4B1D; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0;border-radius: 50px; transition: all .3s;z-index: -1;}
+.theme-btn:hover::after{opacity: 100%; } */
+.theme-btn:hover{filter: brightness(.8); background-color: #F05822; color: #fff;}
+.heading-sm{color: #4A626E; font-size: 40px; font-family: PTnarrow-regular, sans-serif; margin-bottom: 40px;}
+.person-name{ font-size: 40px; font-family: PTnarrow-bold, sans-serif; color: #0B3847; line-height: 76px; margin-bottom: 0;}
+
+
+/* Header */
+.home .header-main{position: absolute; width: 100%; top: 0; left: 0;}
+.home .header-main .navbar-toggler .navbar-toggler-icon{fill: #fff; color: #fff;}
+.header-main .navbar .navbar-nav .nav-item .nav-link{font-size: 22px; line-height: 24px; font-weight: bold; color: #0B3847; background-color: transparent; border-radius: 40px; padding: 8px 16px;}
+.header-main .navbar .navbar-nav .nav-item .nav-link.active{color: #F05822; background-color: #e7e7e7;}
+.home .header-main .navbar .navbar-nav .nav-item .nav-link, .home .header-main .navbar .navbar-nav .nav-item .nav-link.active{color: #fff; background-color: transparent;}
+/* Ends Header */
+
+/* banner-main */
+.banner-main{background-image: url(../images/banner.jpg); height: 44vh; background-repeat: no-repeat; background-size: cover; display: flex; align-items: center;}
+.home .banner-main{background-image: url(../images/HomeBanner.jpg); height: 820px;}
+.banner-main .banner-sec{max-width: 800px;}
+.banner-main .banner-sec h1{margin-bottom: 45px;}
+.banner-main .banner-sec p{font-size: 30px; width: 96%;}
+/* End banner-main */
+
+/* bennelong-funds */
+.bennelong-funds{padding: 100px 0;}
+.bennelong-funds .row{display: flex; align-items: center;}
+.bennelong-funds .left-side h3{font-family: PTnarrow-bold, sans-serif; font-size: 50px; margin-bottom: 40px;}
+.bennelong-funds .bennelong-row{justify-content: space-between;}
+/*  End bennelong-funds */
+
+/* crown-golf */
+.crown-golf .left-side img{width: 100%;}
+.crown-golf .right-side{max-width: 610px;}
+/* Endcrown-golf */
+
+/* Our-Businesses */
+.our-business{padding: 190px 120px 60px;}
+.our-business .business-inner{display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.our-business .business-inner .business-numbers > .row{justify-content: center;}
+.our-business .business-inner .business-numbers{padding-top: 40px; max-width: 1120px;}
+.our-business .business-inner .business-numbers .round{height: 60px; width: 60px; border-radius: 50%; background-color: #B8DCEE; display: inline-block; margin: auto;}
+.our-business .business-inner .business-numbers .busi-number-box:not(:last-child){border-right: 1px solid #B8DCEE;}
+.our-business .business-inner .business-numbers .busi-number-box .primary-light{font-size: 20px;}
+.our-business .business-inner .date{margin-left: auto; margin-top: 174px;}
+.our-business .business-inner .date p{color: #C2C2C2; font-size: 20px;}
+.our-business .business-inner .business-numbers h3{line-height: 1; margin-top: 28px;}
+.our-business .business-inner .owl-carousel .owl-item .business-numbers .busi-number-box img{height: 60px; width: 60px; margin: auto;}
+/* Ends Our-Businesses */
+
+/* our-people */
+.our-people{background: url(../images/bgcycle.png) top left no-repeat;padding: 140px 0;background-size: 50%;} 
+.owl-slider .card{display: inline-block; background: transparent; border: none;}
+.owl-slider .card .img-box{height: 264px; width: 221px; border-top-right-radius: 100px; overflow: hidden;}
+.owl-slider .card .people-detail p{ font-size: 22px; line-height: 28px; margin: 0 !important;}
+.owl-slider .card .people-detail p.person-name{font-family: PTnarrow-bold, sans-serif;}
+.owl-slider .card .people-detail p.designation{font-family: PTnarrow-regular, sans-serif;color: #4A626E;}
+.owl-slider .card .people-detail{margin-top: 15px;}
+.owl-slider .owl-nav{width: fit-content; float: left;}
+.owl-slider .owl-nav button{font-size: 40px !important; margin: 0 20px; height: 40px; width: 55px; background-size: 100% 100% !important; background-repeat: no-repeat !important;}
+.owl-slider .owl-nav button.owl-prev{background-image: url(../images/prev.png);}
+.owl-slider .owl-nav button.owl-next{background-image: url(../images/next.png);}
+.owl-slider .owl-nav button span{display: none;}
+.owl-slider .owl-dots{display: none;}
+.owl-slider .owl-stage-outer{padding-bottom: 50px;}
+.our-people .owl-slider{padding-left: 120px;}
+.our-people .btn-container{padding-right: 120px;}
+/* Ends our-people */
+
+/* principle page */
+.principle-banners{background-image: url(../images/our-principles.png);}
+.about-us{ padding: 165px 0;background: url(../images/about-bgcycle.png) top right no-repeat;}
+.global-values{padding: 130px 0;}
+.global-values .left-side .heading-sm{color: #F05822; margin-bottom: 0px;}
+
+/* our people */
+.people-banners{background-image: url(../images/our-people.png);}
+.bangarra-family-office{padding: 83px 0;}
+.bangarra-family-office p{font-size: 20px;}
+.board-directors{padding: 50px 0;}
+.board-directors .div-heading{position: relative; margin-bottom: 70px;}
+.board-directors .div-heading::after{content:''; position: absolute; top: 50%; right: 0; background: #083848; height: 1px; width: calc(50% - 170px);}
+.board-directors .div-heading::before{content:''; position: absolute; top: 50%; left: 0; background: #083848; height: 1px; width: calc(50% - 170px);}
+.board-directors .div-heading h3{ margin-bottom: 0; width: max-content;}
+.board-directors .right-side .card-div .card{background-color: transparent; border: none; width: fit-content;}
+.board-directors .right-side .card-div .img-box{width: fit-content;}
+.board-directors .right-side .card-div{display: flex; justify-content: space-between;} 
+.board-directors .right-side .card-div .card:first-child{padding-right: 20px;}
+.people-detail .heading-sm{margin: 0; line-height: 36px; font-size: 26px;}
+.cards-details{padding: 145px 0;}
+
+
+/* Footer */
+.footer-main .footer-inner .footer-top{display: flex; align-items: center; justify-content: center; background-color: #0F4F64; padding: 45px 20px; flex-wrap: wrap; width: 100%;}
+.footer-main .footer-inner .footer-top .content{position: relative;}
+.footer-main .footer-inner .footer-top .content:not(:first-child)::after{position: absolute; width: 10px; height: 10px; border-radius: 50%; background-color: #fff; content: ''; top: 50%; left: 0; transform: translateY(-50%);}
+.footer-main .footer-inner .footer-top .content h3{color: #fff; font-size: 50px; font-family: PTnarrow-regular, sans-serif; padding: 0 20px;}
+.footer-main .footer-inner .footer-center{width: 100%; height: 512px; background: url(../images/FirstNations.jpg); background-size: cover; display: flex; align-items: center; justify-content: center;}
+.footer-main .footer-inner .footer-center p{font-size: 30px; font-family: PTnarrow-regular, sans-serif; max-width: 844px; padding: 0 16px;}
+.footer-main .footer-inner .footer-bottom{padding: 45px 20px; display: flex; align-items: center; justify-content: center;}
+.footer-main .footer-inner .footer-bottom .footer-list{display: flex; margin: 0; flex-wrap: wrap; padding: 0; justify-content: center;}
+.footer-main .footer-inner .footer-bottom .footer-list .footer-item{list-style: none; display: inline-block; padding: 0 20px;}
+.footer-main .footer-inner .footer-bottom .footer-list .footer-item .footer-link{text-decoration: none; display: block; text-align: center; font-family: 'Open Sans', sans-serif; font-weight: 600;}
+/* Ends Footer */
+
+
+/* Responsive */
+@media(max-width: 1400px){
+    .header-main .navbar .navbar-nav .nav-item .nav-link{font-size: 16px;}
+    .footer-main .footer-inner .footer-top .content h3{font-size: 40px;}
+}
+@media(max-width: 1100px){
+    .footer-main .footer-inner .footer-top .content h3{font-size: 30px;}
+    .theme-btn{font-size: 18px;}
+
+}
+@media(min-width: 992px){
+    .bennelong-funds .row .left-side{max-width: 600px;}
+}
+@media(max-width: 991px){
+    .header-main .navbar > .container{max-width: 100% !important;}
+    .header-main #navbarNavDropdown{background-color: #0B3847;}
+    .footer-main .footer-inner .footer-bottom .footer-list{flex-direction: column; align-items: center;}
+    .footer-main .footer-inner .footer-bottom .footer-list .footer-item{padding: 14px 16px;}
+    .banner-main .banner-sec h1, .banner-heading{font-size: 60px;}
+    .banner-main .banner-sec p{font-size: 26px; width: 100%;}
+    .home .banner-main{height: 100vh; min-height: 600px;}
+    .common-primary-heading, .bennelong-funds .left-side h3{font-size: 40px;}
+    .heading-sm{font-size: 30px;}
+    .our-business .business-inner .business-numbers > .row{justify-content: space-between;}
+    .our-business .business-inner .business-numbers .busi-number-box{border-right: none !important; border-bottom: 1px solid #B8DCEE; margin: 0 auto 20px; width: calc(50% - 20px);}
+    .our-business{padding: 40px 80px;}
+    .our-business .business-inner .date{margin-top: 100px;}
+    .our-people .owl-slider{padding: 0 8px;}
+    .about-us .right-side img{ border-radius: 50%; overflow: hidden; background-size: cover; height: 250px; width: 250px;}
+    .about-us{ padding: 40px 0;}
+    .global-values {padding: 47px 0;}
+}
+@media(max-width: 767px){
+    .footer-main .footer-inner .footer-top .content h3{font-size: 28px;}
+    .footer-main .footer-inner .footer-top{padding: 28px 16px;}
+    .footer-main .footer-inner .footer-center p{font-size: 24px;}
+    .banner-main .banner-sec h1{font-size: 50px;}
+    .banner-main .banner-sec p{font-size: 24px;}
+    .common-primary-heading, .bennelong-funds .left-side h3{font-size: 35px; margin-bottom: 20px;}
+    .heading-sm{font-size: 28px;}
+    .banner-heading{font-size: 40px;}
+    .our-business .business-inner .business-numbers .busi-number-box{width: 100%;}
+    .our-business .business-inner .date{margin-top: 54px;}
+    .our-business{padding: 40px 20px;}
+    .our-business .business-inner .carousel .carousel-indicators button{height: 8px; width: 8px;}
+    .our-business .business-inner .carousel .carousel-indicators{bottom: -70px;}
+    .our-business .business-inner .business-numbers .round{height: 36px; width: 36px;}
+    .our-business .business-inner .business-numbers .busi-number-box .primary-light{font-size: 16px;}
+    .bennelong-funds, .crown-golf, .our-people{padding: 45px 0;}
+    .bennelong-funds .left-side{margin-bottom: 40px;}
+    .crown-golf .left-side img{max-width: calc(100% - 134px); min-width: 250px;}
+    .crown-golf .row{flex-direction: column-reverse;}
+    .crown-golf .right-side{margin-bottom: 45px;}
+    .crown-golf{padding-bottom: 0;}
+    .theme-btn{padding: 5px 30px;}
+    .bennelong-funds .text-end.col-12{text-align: center !important;}
+    .owl-slider .owl-nav{display: flex; width: 100%; align-items: center; justify-content: space-between;}
+    .our-people .btn-container{padding: 30px 20px 0; display: flex;}
+    .our-people .common-primary-heading, .our-people .heading-sm{text-align: left;}
+    .owl-slider .owl-stage-outer{padding-bottom: 30px;}
+    .about-us .right-side img{ height: 235px; width: 235px;}
+}
+@media(max-width: 576px){
+    .footer-main .footer-inner .footer-top .content h3, .footer-main .footer-inner .footer-center p{font-size: 20px;}
+    .banner-main .banner-sec h1{font-size: 40px;}
+    .banner-heading{font-size: 36px;}
+    .banner-main .banner-sec p{font-size: 18px;}
+    .common-primary-heading, .bennelong-funds .left-side h3{font-size: 30px;}
+    .heading-sm{font-size: 26px; margin-bottom: 30px;}
+}
