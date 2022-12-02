@@ -21,17 +21,20 @@
                 <div class="container">                
                   <?php  
                     $logo_src ='';
-                    if ( is_front_page() ){ 
+                    if ( is_front_page() && get_theme_mod( 'light_logo_upload' ) ){ 
                       $logo_src = get_theme_mod( 'light_logo_upload' );
                     }else if ( has_custom_logo()){
                       $logo_img = get_theme_mod( 'custom_logo' );
                       $image_src = wp_get_attachment_image_src( $logo_img , 'full' );
                       $logo_src = $image_src[0];
-                    }else{
+                    }
+                    if($logo_src == ''){
                       $logo_src = get_template_directory_uri().'/assets/images/logo.png';
                     } 
                     ?>
-                    <img src="<?php echo $logo_src; ?>" class="img-fluid brand-logo" alt="logo">
+                    <a href="<?php echo site_url(); ?>" class="navbar-brand">
+                      <img src="<?php echo $logo_src; ?>" class="img-fluid brand-logo" alt="logo">
+                    </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
