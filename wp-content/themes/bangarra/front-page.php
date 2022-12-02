@@ -46,7 +46,7 @@ get_header();?>
           $in_num_arr = array('in_number_business_group','in_number_people_group','in_number_principle_group','in_number_impact_group');
           foreach($in_num_arr as $in_num_gp){
               $rows = get_field($in_num_gp,'option');
-              if($rows && $rows['heading'] ){
+              if($rows && $rows['in_number_data'] ){
           ?>
           <div> 
           <?php if($rows['heading']){?><h3 class="primary-color common-primary-heading text-white text-center"><?php echo $rows['heading']; ?></h3><?php }?>
