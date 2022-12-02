@@ -39,7 +39,6 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <?php if ( has_nav_menu( 'primary_menu' ) ) : ?>
-                          <nav id="site-navigation" class="primary-navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'bangarra' ); ?>">
                            <?php
                               wp_nav_menu(
                                   array(
@@ -52,7 +51,6 @@
                                   )
                               );
                               ?>
-                          </nav>
                   <?php endif; ?>
                 </div>
               </nav>
