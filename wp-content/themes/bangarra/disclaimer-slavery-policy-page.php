@@ -21,7 +21,7 @@ get_header();?>
                     if($content_data){
                         foreach($content_data as $data){?>
                         <?php if($data['heading']){ ?>
-                            <h1 class="primary-color common-primary-heading"><?php echo $data['heading']; ?></h1>
+                            <h3 class="primary-color common-primary-heading"><?php echo $data['heading']; ?></h3>
                         <?php } ?>
                         <?php if($data['description']){echo $data['description'];} ?>        
                 <?php } } ?>
