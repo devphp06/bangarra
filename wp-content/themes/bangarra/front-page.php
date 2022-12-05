@@ -4,7 +4,7 @@
  */
 get_header();?>
     <!-- banner -->
-    <div class="banner-main" style="background-image: url(<?php echo get_field('banner_image');?>);">
+    <div class="banner-main" <?php if(get_field('banner_image')){?>style="background-image: url(<?php echo get_field('banner_image');?>);"<?php }?>>
       <div class="container">
         <div class="row">
           <div class="banner-sec">
@@ -100,7 +100,7 @@ get_header();?>
     <!-- //Our Principles -->
 
     <!-- Our People -->
-    <div class="our-people bg-gray" style="background: url(<?php echo get_field('our_people_background_image');?>) top left no-repeat;background-size: 50%;">
+    <div class="our-people bg-gray" <?php if(get_field('our_people_background_image')){?>style="background: url(<?php echo get_field('our_people_background_image');?>) top left no-repeat;background-size: 50%;"<?php }?>>
     <!-- <div class="our-people bg-gray">  -->
       <div class="container-fluid">
         <div class="row d-flex align-items-center justify-content-center">

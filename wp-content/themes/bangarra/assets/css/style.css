@@ -28,6 +28,9 @@ a{text-decoration: none;}
 .header-main .navbar .navbar-nav .nav-item .nav-link{font-size: 22px; line-height: 24px; font-weight: bold; color: #0B3847; background-color: transparent; border-radius: 40px; padding: 8px 16px;}
 .header-main .navbar .navbar-nav .nav-item .nav-link.active, .header-main .navbar .navbar-nav li.current-menu-item a {color: #F05822 !important; background-color: #e7e7e7 !important;}
 .home .header-main .navbar .navbar-nav .nav-item .nav-link, .home .header-main .navbar .navbar-nav .nav-item .nav-link.active{color: #fff; background-color: transparent;}
+.header-main .navbar-toggler{border: 0;}
+.header-main .navbar-toggler .navbar-toggler-icon{max-width: 24px;}
+.header-main .navbar-toggler:focus { box-shadow: none;}
 /* Ends Header */
 
 /* banner-main */
@@ -99,12 +102,18 @@ a{text-decoration: none;}
 .board-directors .div-heading::after{content:''; position: absolute; top: 50%; right: 0; background: #083848; height: 1px; width: calc(50% - 170px);}
 .board-directors .div-heading::before{content:''; position: absolute; top: 50%; left: 0; background: #083848; height: 1px; width: calc(50% - 170px);}
 .board-directors .div-heading h3{ margin-bottom: 0; width: max-content;}
-.board-directors .right-side .card-div .card{background-color: transparent; border: none; width: fit-content;}
+.board-directors .right-side .card-div .card{background-color: transparent; border: none; width: max-content;}
 .board-directors .right-side .card-div .img-box{width: fit-content;}
-.board-directors .right-side .card-div{display: flex; justify-content: space-between;flex-wrap: initial;} 
+.board-directors .right-side .card-div{display: flex; justify-content: space-between;} 
 .people-detail .heading-sm{margin: 0; line-height: 36px; font-size: 26px;}
 .cards-details{padding: 145px 0;}
+.people-detail .designation{font-size: 30px;}
 /* Ends our people */
+
+/* our impact */
+.banner-impact{background: url(../images/our-impact.png); background-size: cover;} 
+.bennelong-foundation{padding: 165px 0;}
+
 
 /* Disclaimer */
 .anonymous-information h3.primary-color{font-size: 30px;}
@@ -162,7 +171,6 @@ a{text-decoration: none;}
 }
 @media(max-width: 991px){
     .contactUs .common-header-strip .banner-heading{font-size: 50px;}
-    .header-main .navbar > .container{max-width: 100% !important;}
     .footer-main .footer-inner .footer-bottom .footer-list{flex-direction: column; align-items: center;}
     .footer-main .footer-inner .footer-bottom .footer-list .footer-item{padding: 14px 16px;}
     .banner-main .banner-sec h1, .banner-heading{font-size: 60px;}
@@ -183,8 +191,14 @@ a{text-decoration: none;}
     .contactUs #contactForm{max-width: 100%; padding-bottom: 0;}
     .contactUs .contact-form .contact-inner .desktop-map{display: none;}
     .contactUs .contact-address-details .mobile-map{display: block; margin-top: 32px;}
-    .header-main .navbar .navbar-nav .nav-item .nav-link{color: #fff; background-color: #0B3847; border-radius: 0;}
-    .header-main #navbarNavDropdown ul.navbar-nav{margin: 0 -15px !important;}
+    .header-main .navbar .navbar-nav .nav-item .nav-link{color: #fff; text-align: center; border-radius: 0;}
+    .header-main .navbar-expand-lg{padding-bottom: 0; position: relative;}
+    .header-main #navbarNavDropdown{position: absolute; left: 0px; right: 0px; top: 96px;}
+    .header-main .navbar .navbar-brand img{max-width: 150px; margin-bottom: 8px;}
+    .header-main .navbar-expand-lg .navbar-toggler{ margin-bottom: 8px;}
+    .header-main #navbarNavDropdown .navbar-nav{ background-color: #0F4F64; padding: 64px 0;}
+    .header-main .navbar .navbar-nav .nav-item{margin: 10px 0;}
+    .cards-details .reverse-col {flex-direction: column-reverse;}
 }
 @media(max-width: 767px){
     .footer-main .footer-inner .footer-top .content h3{font-size: 28px;}
@@ -192,7 +206,7 @@ a{text-decoration: none;}
     .footer-main .footer-inner .footer-center p{font-size: 24px;}
     .banner-main .banner-sec h1{font-size: 50px;}
     .banner-main .banner-sec p{font-size: 24px;}
-    .common-primary-heading, .bennelong-funds .left-side h3{font-size: 35px; margin-bottom: 20px;}
+    .common-primary-heading, .bennelong-funds .left-side h3{font-size: 35px;}
     .heading-sm{font-size: 28px;}
     .banner-heading{font-size: 40px;}
     .our-business .business-inner .business-numbers .busi-number-box{width: 100%;}
@@ -221,6 +235,11 @@ a{text-decoration: none;}
     .contactUs .contact-address-details > .container > .row{flex-direction: column; text-align: center;}
     .contactUs .contact-address-details .row .details{margin: auto;}
     .anonymous-information h3.primary-color{font-size: 26px; }
+    .person-name{font-size: 22px; line-height: 28px; padding: 5px 0;}
+    .people-detail .heading-sm{font-size: 18px; line-height: 28px;}
+    .board-directors .right-side .card-div .img-box{margin-bottom: 10px;}
+    .people-detail .designation{font-size: 18px;}
+    .cards-details .people-detail .person-name{padding: 25px 0 5px;}
 }
 @media(max-width: 576px){
     .footer-main .footer-inner .footer-top .content h3, .footer-main .footer-inner .footer-center p{font-size: 20px;}
@@ -238,6 +257,10 @@ a{text-decoration: none;}
     .contactUs #contactForm .theme-btn{margin: auto; display: flex; max-width: fit-content;}
     .contactUs .common-header-strip .banner-heading{font-size: 34px;}
     .content-main .anonymous-information{padding: 30px 0 40px;}
+    .header-main .navbar .navbar-brand img {max-width: 75px;}
+    .board-directors .right-side .card-div{flex-direction: column; align-items: center;}
+    .board-directors .right-side .card-div .card:last-child{margin-top: 40px;}
+    .board-directors .div-heading{margin-bottom: 40px;}
 }
 @media(max-width: 460px){
     .contactUs .contact-address-details .mobile-map iframe{

@@ -5,7 +5,7 @@
 get_header();?>
 
     <!-- banner -->
-    <div class="principle-banners banner-main" style="background-image: url(<?php echo get_field('banner_image');?>);">
+    <div class="principle-banners banner-main" <?php if(get_field('banner_image')){?>style="background-image: url(<?php echo get_field('banner_image');?>);"<?php }?>>
       <div class="container">
         <div class="row">
           <div class="banner-sec">
@@ -17,7 +17,7 @@ get_header();?>
     <!-- //banner -->
 
     <!-- about-us -->
-    <div class="about-us" style="background: url(<?php echo get_field('about_us_background_image');?>) top right no-repeat;">
+    <div class="about-us" <?php if(get_field('about_us_background_image')){?>style="background: url(<?php echo get_field('about_us_background_image');?>) top right no-repeat;"<?php }?>>
       <div class="container-fluid">
         <div class="row d-flex align-items-center justify-content-end">
           <div class="left-side col-12 col-lg-6 pe-lg-5">

@@ -1,3 +1,3 @@
 <?php get_header();?>
-<?php the_content();?>
+<h1>ERROR 404: PAGE NOT FOUND!</h1>
 <?php get_footer();?>

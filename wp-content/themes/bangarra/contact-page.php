@@ -11,7 +11,7 @@ get_header();?>
             <?php if(get_field('heading')){?><h1 class="banner-heading text-white"><?php echo get_field('heading');?></h1><?php }?>
         </div>
       </div>
-      <div class="contact-form">
+      <div class="contact-form" <?php if(get_field('form_background_image')){?>style="background:url(<?php echo get_field('form_background_image'); ?>) top right no-repeat;"<?php }?>>
         <div class="contact-inner container">
           <div class="row">
             <div class="col-12 col-lg-7">
