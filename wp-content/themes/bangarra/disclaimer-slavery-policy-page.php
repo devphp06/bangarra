@@ -13,7 +13,7 @@ get_header();?>
         <?php }?>
         </div>
       </div>
-      <div class="anonymous-information">
+      <div class="anonymous-information" <?php if(get_field('background_image')){?>style="background: url(<?php echo get_field('background_image');?>) top right no-repeat;"<?php }?> >
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-7">
@@ -28,7 +28,7 @@ get_header();?>
             </div>
             <div class="col-12 col-md-5 d-none d-md-block rounded-circle text-end mt-5 pt-5">
             <?php if(get_field('image')){?>
-                <img src="<?php echo get_field('image');?>" alt="" class="img-fluid mt-3 pt-4">
+                <img src="<?php echo get_field('image');?>" alt="image" class="img-fluid mt-3 pt-4">
             <?php }?>
             </div>
           </div>

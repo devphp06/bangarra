@@ -30,7 +30,7 @@ get_header();?>
           </div>
           <div class="col-12 col-md-6 text-end">
           <?php if(get_field('our_businesses_image')){?>
-            <img src="<?php echo get_field('our_businesses_image'); ?>" alt="" class="img-fluid">
+            <img src="<?php echo get_field('our_businesses_image'); ?>" alt="img" class="img-fluid">
             <?php }?>
           </div>
         </div>
@@ -43,7 +43,7 @@ get_header();?>
       <div class="business-inner">
         <div class="business-carousel owl-carousel owl-theme">
           <?php
-          $in_num_arr = array('in_number_business_group','in_number_people_group','in_number_principle_group','in_number_impact_group');
+          $in_num_arr = array('in_number_business_group','in_number_people_group','in_number_impact_group');
           foreach($in_num_arr as $in_num_gp){
               $rows = get_field($in_num_gp,'option');
               if($rows && $rows['in_number_data'] ){
@@ -52,7 +52,6 @@ get_header();?>
           <?php if($rows['heading']){?><h3 class="primary-color common-primary-heading text-white text-center"><?php echo $rows['heading']; ?></h3><?php }?>
             <div class="container business-numbers">
               <div class="row">
-
                 <?php $subrows = $rows['in_number_data'];
                 if($subrows){
                 foreach($subrows as $subrow) { 
@@ -63,7 +62,6 @@ get_header();?>
                     <?php if($subrow['subheading']){?><p class="primary-light"><?php echo $subrow["subheading"]; ?></p><?php }?>
                   </div>
                 <?php } }?>
-
               </div>
               <?php if($in_num_gp == 'in_number_business_group' && get_field('in_number_date','option') ){?>
                 <div class="date" style="display: flex; justify-content: flex-end; width: 100%;">
@@ -71,8 +69,7 @@ get_header();?>
                 </div>
               <?php }?>
             </div> 
-          </div>
-          
+          </div>          
           <?php } }?>
         </div>
         
@@ -86,7 +83,7 @@ get_header();?>
         <div class="row d-flex align-items-center">
           <div class="left-side col col-12 col-md-6 p-0">
           <?php if(get_field('our_principle_image')){?>
-            <img src="<?php echo get_field('our_principle_image');?>" alt="" class="img-fluid">
+            <img src="<?php echo get_field('our_principle_image');?>" alt="img" class="img-fluid">
           <?php }?>
           </div>
           <div class="right-side col col-12 col-md-6">
@@ -101,7 +98,6 @@ get_header();?>
 
     <!-- Our People -->
     <div class="our-people bg-gray" <?php if(get_field('our_people_background_image')){?>style="background: url(<?php echo get_field('our_people_background_image');?>) top left no-repeat;background-size: 50%;"<?php }?>>
-    <!-- <div class="our-people bg-gray">  -->
       <div class="container-fluid">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-lg-7 text-center">
@@ -118,7 +114,7 @@ get_header();?>
                         <div class="card">
                             <div class="img-box">
                             <?php if($row['image']){?>
-                              <img src="<?php echo $row['image'];?>" alt="" class="img-fluid">
+                              <img src="<?php echo $row['image'];?>" alt="img" class="img-fluid">
                             <?php }?>  
                             </div>
                             <div class="people-detail">

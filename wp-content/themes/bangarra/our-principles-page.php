@@ -25,7 +25,7 @@ get_header();?>
             <?php if(get_field('about_us_description')){?><?php echo get_field('about_us_description');?><?php }?>
           </div>
           <div class="right-side col-12 col-lg-4 text-center text-lg-end py-4 pt-lg-0 p-0">
-            <?php if(get_field('about_us_slide_image')){?><img src="<?php echo get_field('about_us_slide_image');?>" alt="" class="img-fluid"><?php }?>
+            <?php if(get_field('about_us_slide_image')){?><img src="<?php echo get_field('about_us_slide_image');?>" alt="img" class="img-fluid"><?php }?>
           </div>
         </div>
       </div>

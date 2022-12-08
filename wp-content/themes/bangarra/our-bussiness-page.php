@@ -28,7 +28,7 @@ get_header();?>
               </div>
               <div class="col-12 col-md-6 text-end">
               <?php if(get_field('bennelong_funds_image')){?>
-                <img src="<?php echo get_field('bennelong_funds_image'); ?>" alt="" class="img-fluid">
+                <img src="<?php echo get_field('bennelong_funds_image'); ?>" alt="img" class="img-fluid">
               <?php }?>
               </div> 
             </div>
@@ -42,7 +42,7 @@ get_header();?>
             <div class="row d-flex align-items-center">
               <div class="left-side col col-lg-6 p-0">
               <?php if(get_field('crown_golf_field_image')){?>
-                <img src="<?php echo get_field('crown_golf_field_image'); ?>" alt="" class="img-fluid">
+                <img src="<?php echo get_field('crown_golf_field_image'); ?>" alt="img" class="img-fluid">
               <?php }?>
               </div> 
               <div class="right-side col col-lg-6">
@@ -67,8 +67,8 @@ get_header();?>
               <div class="container business-numbers">
                 <div class="row">
                   <?php $subgroups = $group['in_number_data'];
-                  if($subgroups){ 
-                  foreach($subgroups as $subgroup) {
+                    if($subgroups){ 
+                    foreach($subgroups as $subgroup) {
                   ?>
                   <div class="col-md-6 col-lg-4 busi-number-box text-center">
                     <?php if($subgroup["icon_image"]){?><img src="<?php echo $subgroup["icon_image"]; ?>" alt="icon" class="img-fluid"><?php }?>
@@ -76,7 +76,6 @@ get_header();?>
                     <?php if($subgroup["subheading"]){?><p class="primary-light"><?php echo $subgroup["subheading"]; ?></p><?php }?>
                   </div>
                 <?php } }?>
-
                 </div>
               </div>
               <?php if(get_field('in_number_date','option')){?>

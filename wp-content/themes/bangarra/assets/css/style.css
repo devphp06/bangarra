@@ -20,17 +20,20 @@ a{text-decoration: none;}
 .theme-btn:hover{filter: brightness(.8); background-color: #F05822; color: #fff;}
 .heading-sm{color: #4A626E; font-size: 40px; font-family: PTnarrow-regular, sans-serif; margin-bottom: 40px;}
 .person-name{ font-size: 40px; font-family: PTnarrow-bold, sans-serif; color: #0B3847; line-height: 76px; margin-bottom: 0;}
+.touch-device{display: none !important;}
 
 
 /* Header */
 .home .header-main{position: absolute; width: 100%; top: 0; left: 0;}
 .home .header-main .navbar-toggler .navbar-toggler-icon{fill: #fff; color: #fff;}
-.header-main .navbar .navbar-nav .nav-item .nav-link{font-size: 22px; line-height: 24px; font-weight: bold; color: #0B3847; background-color: transparent; border-radius: 40px; padding: 8px 16px;}
+.header-main .navbar .navbar-nav .nav-item .nav-link{font-size: 22px; line-height: 24px; font-weight: bold; color: #0B3847; background-color: transparent; border-radius: 40px; padding: 8px 16px; transition: .2s;}
 .header-main .navbar .navbar-nav .nav-item .nav-link.active, .header-main .navbar .navbar-nav li.current-menu-item a {color: #F05822 !important; background-color: #e7e7e7 !important;}
+.header-main .navbar .navbar-nav .nav-item .nav-link:hover{color: #F05822 !important;}
 .home .header-main .navbar .navbar-nav .nav-item .nav-link, .home .header-main .navbar .navbar-nav .nav-item .nav-link.active{color: #fff; background-color: transparent;}
 .header-main .navbar-toggler{border: 0;}
 .header-main .navbar-toggler .navbar-toggler-icon{max-width: 24px;}
 .header-main .navbar-toggler:focus { box-shadow: none;}
+.home .navbar-toggler-icon{background-image: url(../images/white-icon.png);}
 /* Ends Header */
 
 /* banner-main */
@@ -88,7 +91,7 @@ a{text-decoration: none;}
 
 /* principle page */
 .principle-banners{background-image: url(../images/our-principles.png);}
-.about-us, .contact-form{ padding: 165px 0;background: url(../images/about-bgcycle.png) top right no-repeat;}
+.about-us, .contact-form, .anonymous-information{ padding: 165px 0;background: url(../images/about-bgcycle.png) top right no-repeat;}
 .contact-form{padding: 0;}
 .global-values{padding: 130px 0;}
 .global-values .left-side .heading-sm{color: #F05822; margin-bottom: 0px;}
@@ -111,8 +114,17 @@ a{text-decoration: none;}
 /* Ends our people */
 
 /* our impact */
-.banner-impact{background: url(../images/our-impact.png); background-size: cover;} 
+.banner-impact{background: url(../images/our-impact.png); background-size: cover; background-position: center;}
 .bennelong-foundation{padding: 165px 0;}
+.grant-recipients-slider .owl-item .imgs-box .img-fluid{ height: 109px;width: 109px; object-fit: contain;}
+.grant-recipients-slider .owl-item .imgs-box{border: 1px solid #0b384722; width: fit-content; padding: 18px; margin: 9px 0; display: inline-flex;}
+.grant-recipients{padding-bottom: 160px;}
+.case-study{padding: 100px 0;}
+.impact-by-numbers{padding-bottom: 190px;}
+.foundation-annual-report{background: url(../images/Oval.png) top right no-repeat;}
+.case-study .common-primary-heading span{font-weight: 400; font-family: PTnarrow-regular, sans-serif; color: #F05822;}
+.grant-recipients-mobileview{display: none;}
+/* Ends our impact */
 
 
 /* Disclaimer */
@@ -121,10 +133,30 @@ a{text-decoration: none;}
 .content-main .anonymous-information .contact-inner{padding-top:0px !important;}
 .content-main .primary-color{ margin-bottom: 30px;}
 .content-main p{padding-bottom: 30px;}
+/* Ends Disclaimer */
 
 /* Modern Slavery Statement */
 .li-list li{padding-bottom: 25px;}
 .li-list li::marker{color: #F05822; font-size: 18px;}
+/* Ends Modern Slavery Statement */
+
+/* Our Vision */
+.our-vision .row .books-img img{filter: drop-shadow(15px 15px 10px #00000070);}
+.our-vision{padding: 47px 0 57px;}
+.our-vision .reconciliation{font-weight: 600; font-size: 20px; font-family: PTnarrow-bold, sans-serif;}
+a:hover{color: #F05822; filter: brightness(.8);}
+/* EndsOur Vision */
+
+/* Sustainability & Community */
+.sustainability{background: url(../images/sustainability.jpg); height: 800px; display: flex; align-items: center; justify-content: center;}
+.sustainability .sustainability-content{max-width: 800px; margin: auto;}
+.sustainability .sustainability-content p{font-size: 20px; color: #fff;}
+/* Ends Sustainability & Community */
+
+/* Carbon Neutral */
+.carbonNeutral{padding: 200px 0 174px;}
+.carbonNeutral .reconciliation{font-weight: 400; font-family: PTnarrow-regular, sans-serif; font-size: 20px;}
+/* Ends Carbon Neutral */
 
 /* Footer */
 .footer-main .footer-inner .footer-top{display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%;background-color: #0F4F64; padding: 45px 20px;}
@@ -160,6 +192,10 @@ a{text-decoration: none;}
 @media(max-width: 1400px){
     .header-main .navbar .navbar-nav .nav-item .nav-link{font-size: 16px;}
     .footer-main .footer-inner .footer-top .content h3{font-size: 40px;}
+}
+@media(max-width: 1200px){
+    .bennelong-foundation{padding: 100px 0;}
+    .grant-recipients{padding-bottom: 100px;}
 }
 @media(max-width: 1100px){
     .footer-main .footer-inner .footer-top .content h3{font-size: 30px;}
@@ -199,17 +235,19 @@ a{text-decoration: none;}
     .header-main #navbarNavDropdown .navbar-nav{ background-color: #0F4F64; padding: 64px 0;}
     .header-main .navbar .navbar-nav .nav-item{margin: 10px 0;}
     .cards-details .reverse-col {flex-direction: column-reverse;}
+    .our-vision .desktop-device{margin: 30px 0;}
+    .our-vision .reconciliation{width: 100%;display: block; text-align: center;}
 }
 @media(max-width: 767px){
     .footer-main .footer-inner .footer-top .content h3{font-size: 28px;}
-    .footer-main .footer-inner .footer-top{padding: 28px 16px;}
+    .footer-main .footer-inner .footer-top{padding: 28px 0px;}
     .footer-main .footer-inner .footer-center p{font-size: 24px;}
     .banner-main .banner-sec h1{font-size: 50px;}
     .banner-main .banner-sec p{font-size: 24px;}
     .common-primary-heading, .bennelong-funds .left-side h3{font-size: 35px;}
     .heading-sm{font-size: 28px;}
     .banner-heading{font-size: 40px;}
-    .our-business .business-inner .business-numbers .busi-number-box{width: 100%;}
+    .our-business .business-inner .business-numbers .busi-number-box{width: 100%; max-width: 220px;}
     .our-business .business-inner .date{margin-top: 54px;}
     .our-business{padding: 40px 20px;}
     .our-business .business-inner .carousel .carousel-indicators button{height: 8px; width: 8px;}
@@ -240,6 +278,14 @@ a{text-decoration: none;}
     .board-directors .right-side .card-div .img-box{margin-bottom: 10px;}
     .people-detail .designation{font-size: 18px;}
     .cards-details .people-detail .person-name{padding: 25px 0 5px;}
+    .grant-recipients{padding-bottom: 74px;}
+    .case-study{padding: 28px 0 24px;}
+    .our-business .business-inner .business-numbers h3{margin-top: 22px;}
+    .our-vision{padding: 60px 0 66px;}
+    .desktop-device{display: none !important;}
+    .touch-device{display: block !important;}
+    .sustainability .sustainability-content p{font-size: 18px;}
+    .carbonNeutral{padding: 46px 0 48px;}
 }
 @media(max-width: 576px){
     .footer-main .footer-inner .footer-top .content h3, .footer-main .footer-inner .footer-center p{font-size: 20px;}
@@ -261,6 +307,10 @@ a{text-decoration: none;}
     .board-directors .right-side .card-div{flex-direction: column; align-items: center;}
     .board-directors .right-side .card-div .card:last-child{margin-top: 40px;}
     .board-directors .div-heading{margin-bottom: 40px;}
+    .bennelong-foundation{padding: 38px 0 70px;}
+    .grant-recipients .common-primary-heading{margin-bottom: 22px;}
+    .grant-recipients-mobileview{display: block;}
+    .grant-recipients-pcview{display: none;}
 }
 @media(max-width: 460px){
     .contactUs .contact-address-details .mobile-map iframe{
@@ -274,3 +324,19 @@ a{text-decoration: none;}
         height: 300px;
     }
 }
+.case-study .common-primary-heading span{font-weight: 400; font-family: PTnarrow-regular, sans-serif; color: #F05822;}
+/* Contact  */
+.contactUs #contactForm span.cf7span-class.wpcf7-valid, .contactUs #contactForm span.cf7span-class.wpcf7-not-valid {position: relative;}
+.contactUs #contactForm span.cf7span-class.wpcf7-valid:after, .contactUs #contactForm span.cf7span-class.wpcf7-not-valid:after {    
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+.contactUs #contactForm span.cf7span-class.wpcf7-not-valid:after{background-color: red;}
+.contactUs #contactForm span.cf7span-class.wpcf7-valid:after {background-color: green;}
+/* Contact  */
