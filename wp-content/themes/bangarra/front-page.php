@@ -4,7 +4,7 @@
  */
 get_header();?>
     <!-- banner -->
-    <div class="banner-main" <?php if(get_field('banner_image')){?>style="background-image: url(<?php echo get_field('banner_image');?>);"<?php }?>>
+    <div class="banner-main banner-main-circle" <?php if(get_field('banner_image')){?>style="background-image: url(<?php echo get_field('banner_image');?>);"<?php }?>>
       <div class="container">
         <div class="row">
           <div class="banner-sec">
@@ -17,7 +17,7 @@ get_header();?>
     <!-- //banner -->
 
     <!-- Bennelong Funds -->
-    <div class="bennelong-funds">
+    <div class="bennelong-funds bennelong-funds-bg">
       <div class="container">
         <div class="row">
           <div class="left-side col-12 col-md-6">
