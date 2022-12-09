@@ -55,7 +55,7 @@ get_header();?>
                   <div class="card col">
                     <div class="img-box">
                       <?php if($row['image']){?>
-                        <img src="<?php echo $row['image'];?>" alt="img" class="img-fluid">
+                        <img src="<?php echo $row['image'];?>" alt="img" class="img-fluid our-people-image">
                       <?php }?>
                     </div>
                     <div class="people-detail">
@@ -90,7 +90,7 @@ get_header();?>
                 </div>
                 <div class="right-side col-12 col-lg-4 text-center">
                   <?php if($row['image']){?>
-                    <img src="<?php echo $row['image'];?>" alt="image" class="img-fluid">
+                    <img src="<?php echo $row['image'];?>" alt="image" class="img-fluid our-people-image">
                   <?php }?>  
                 </div>
               </div>
@@ -111,7 +111,7 @@ get_header();?>
        if($rows){
         $i =0;
         foreach($rows as $row) { $i++;?>
-          <div class="cards-details <?php if($i%2!=0){echo 'bg-gray';}?>">
+          <div class="cards-details <?php if($i%2!=0){echo 'bg-gray ';} if($i ==1){echo 'executive_team-member1';}?>">
             <div class="container">
               <div class="row reverse-col d-flex align-items-center">
                 <div class="people-detail col-12 col-lg-8">
@@ -122,7 +122,7 @@ get_header();?>
                 </div>
                 <div class="right-side col-12 col-lg-4 text-center">
                   <?php if($row['image']){?>
-                    <img src="<?php echo $row['image'];?>" alt="image" class="img-fluid">
+                    <img src="<?php echo $row['image'];?>" alt="image" class="img-fluid our-people-image">
                   <?php }?>  
                 </div>
               </div>
@@ -132,32 +132,29 @@ get_header();?>
     <!-- //Executive Team -->
 
     <!-- Our Business section -->
-    <div class="our-business primary-background container-fluid">
-      <div class="business-inner">
-        <div class="business-carousel owl-carousel">
+    <div class="our-business impact-by-numbers primary-background container-fluid">
+        <div class="business-inner">
         <?php $group = get_field('in_number_people_group','option'); 
-            if($group){ ?>
-            <div> 
-            <?php if($group['heading']){?>
-                <h3 class="primary-color common-primary-heading text-white text-center">In Numbers</h3>
-            <?php }?>
+            if($group){ 
+                if($group['heading']){?>
+                    <h3 class="primary-color common-primary-heading text-white"><?php echo $group['heading']; ?></h3>
+                <?php }?>
             <div class="container business-numbers">
                 <div class="row">
-                <?php $subgroups = $group['in_number_data'];
-                    if($subgroups){ 
-                    foreach($subgroups as $subgroup) { ?>
-                    <div class="col-md-6 col-lg-4 busi-number-box text-center">
-                            <?php if($subgroup["icon_image"]){?><img src="<?php echo $subgroup["icon_image"]; ?>" alt="icon" class="img-fluid"><?php }?>
-                            <?php if($subgroup["value"]){?><h3 class="banner-heading active-color"><?php echo $subgroup["value"]; ?></h3><?php }?>
-                            <?php if($subgroup["subheading"]){?><p class="primary-light"><?php echo $subgroup["subheading"]; ?></p><?php }?>
-                    </div>
-                <?php } }?>
-              </div>
-            </div> 
-          </div>
-          <?php } ?>            
+                    <?php $subgroups = $group['in_number_data'];
+                        if($subgroups){ 
+                        foreach($subgroups as $subgroup) {
+                    ?>
+                        <div class="col-md-6 col-lg-4 busi-number-box text-center">
+                              <?php if($subgroup["icon_image"]){?><img src="<?php echo $subgroup["icon_image"]; ?>" alt="icon" class="img-fluid"><?php }?>
+                              <?php if($subgroup["value"]){?><h3 class="banner-heading active-color"><?php echo $subgroup["value"]; ?></h3><?php }?>
+                              <?php if($subgroup["subheading"]){?><p class="primary-light"><?php echo $subgroup["subheading"]; ?></p><?php }?>
+                        </div>
+                    <?php } }?>
+                </div>
+            </div>
+            <?php } ?>  
         </div>
-      </div>
     </div>
     <!-- // Our Business section-->
 <?php get_footer();?>

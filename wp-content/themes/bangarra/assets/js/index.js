@@ -40,22 +40,24 @@ jQuery(document).ready(function ($) {
         loop: true,
         dots: true,
         autoplay:true,   
-        smartSpeed: 500, 
+        // smartSpeed: 500, 
+        autoplayTimeout: 4000, 
     });
 
     $('.grant-recipients-slider').owlCarousel({
         loop:true,
+        autoplay: true,
+        autoplayTimeout: 2000, 
         margin:10,
         responsive:{
             0:{
-                items:1,
-            },
-            600:{
                 items:3,
             },
-            1000:{
+            768:{
+                items:5,
+            },
+            1100:{
                 items:8,
-                loop:false
             }
         }
     });

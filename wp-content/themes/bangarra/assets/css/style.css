@@ -37,7 +37,8 @@ a{text-decoration: none;}
 /* Ends Header */
 
 /* banner-main */
-.banner-main{background-image: url(../images/banner.jpg); height: 44vh; background-repeat: no-repeat; background-size: cover; display: flex; align-items: center;}
+.banner-main{background-image: url(../images/banner.jpg); height: 44vh; background-repeat: no-repeat; background-size: cover; display: flex; align-items: center; }
+/* .banner-main::after{ position: absolute; top: 0; right: 0; content: ''; background: url(../images/banner-circles.png) top right no-repeat; width: 100%; height: 100%;} */
 .home .banner-main{background-image: url(../images/HomeBanner.jpg); height: 820px;}
 .banner-main .banner-sec{max-width: 800px;}
 .banner-main .banner-sec h1{margin-bottom: 45px;}
@@ -71,7 +72,7 @@ a{text-decoration: none;}
 /* Ends Our-Businesses */
 
 /* our-people */
-.our-people{background: url(../images/bgcycle.png) top left no-repeat;padding: 140px 0;background-size: 50%;} 
+.our-people{background: url(../images/bgcycle.png) top left no-repeat;padding: 140px 0;background-size: 50% !important;} 
 .owl-slider .card{display: inline-block; background: transparent; border: none;}
 .owl-slider .card .img-box{height: 264px; width: 221px; border-top-right-radius: 100px; overflow: hidden;}
 .owl-slider .card .people-detail p{ font-size: 22px; line-height: 28px; margin: 0 !important;}
@@ -87,15 +88,19 @@ a{text-decoration: none;}
 .owl-slider .owl-stage-outer{padding-bottom: 50px;}
 .our-people .owl-slider{padding-left: 120px;}
 .our-people .btn-container{padding-right: 120px;}
+.executive_team-member1{padding-top: 0px !important;}
 /* Ends our-people */
 
 /* principle page */
 .principle-banners{background-image: url(../images/our-principles.png);}
-.about-us, .contact-form, .anonymous-information{ padding: 165px 0;background: url(../images/about-bgcycle.png) top right no-repeat;}
+.about-us, .contact-form, .anonymous-information, .bennelong-funds-bg{ padding: 165px 0;background: url(../images/about-bgcycle.png) top right no-repeat;}
 .contact-form{padding: 0;}
 .global-values{padding: 130px 0;}
 .global-values .left-side .heading-sm{color: #F05822; margin-bottom: 0px;}
-
+.about-us{position: relative;}
+.about-us .right-side{position: absolute; right: 0;}
+.global-values .global-values-left{max-width: 390px;margin-left: auto; margin-right: 0;margin-top: 120px;}
+.global-values .global-values-left p{line-height: 50px;}
 /* our people */
 .people-banners{background-image: url(../images/our-people.png);}
 .bangarra-family-office{padding: 83px 0;}
@@ -111,6 +116,7 @@ a{text-decoration: none;}
 .people-detail .heading-sm{margin: 0; line-height: 36px; font-size: 26px;}
 .cards-details{padding: 145px 0;}
 .people-detail .designation{font-size: 30px;}
+.our-people-number{padding-bottom: 190px;}
 /* Ends our people */
 
 /* our impact */
@@ -123,7 +129,8 @@ a{text-decoration: none;}
 .impact-by-numbers{padding-bottom: 190px;}
 .foundation-annual-report{background: url(../images/Oval.png) top right no-repeat;}
 .case-study .common-primary-heading span{font-weight: 400; font-family: PTnarrow-regular, sans-serif; color: #F05822;}
-.grant-recipients-mobileview{display: none;}
+.grant-recipients-mobileview{display: none !important;}
+.case-study .orange-text{font-family: PTnarrow-regular, sans-serif;}
 /* Ends our impact */
 
 
@@ -133,6 +140,7 @@ a{text-decoration: none;}
 .content-main .anonymous-information .contact-inner{padding-top:0px !important;}
 .content-main .primary-color{ margin-bottom: 30px;}
 .content-main p{padding-bottom: 30px;}
+.disclaimer-parent-container p{padding-bottom: 10px;}
 /* Ends Disclaimer */
 
 /* Modern Slavery Statement */
@@ -237,6 +245,9 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .cards-details .reverse-col {flex-direction: column-reverse;}
     .our-vision .desktop-device{margin: 30px 0;}
     .our-vision .reconciliation{width: 100%;display: block; text-align: center;}
+    .banner-main{background-position: center;}
+    .about-us .right-side{position: initial;}
+    .carbonNeutral .right-side{padding-top: 40px;}
 }
 @media(max-width: 767px){
     .footer-main .footer-inner .footer-top .content h3{font-size: 28px;}
@@ -286,6 +297,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .touch-device{display: block !important;}
     .sustainability .sustainability-content p{font-size: 18px;}
     .carbonNeutral{padding: 46px 0 48px;}
+    .about-us, .contact-form, .anonymous-information, .bennelong-funds-bg{background-image: none;}
 }
 @media(max-width: 576px){
     .footer-main .footer-inner .footer-top .content h3, .footer-main .footer-inner .footer-center p{font-size: 20px;}
@@ -309,8 +321,9 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .board-directors .div-heading{margin-bottom: 40px;}
     .bennelong-foundation{padding: 38px 0 70px;}
     .grant-recipients .common-primary-heading{margin-bottom: 22px;}
-    .grant-recipients-mobileview{display: block;}
-    .grant-recipients-pcview{display: none;}
+    .grant-recipients-mobileview{display: block !important;}
+    .grant-recipients-pcview{display: none !important;}
+    .about-us, .contact-form, .anonymous-information, .bennelong-funds{ background: none;}
 }
 @media(max-width: 460px){
     .contactUs .contact-address-details .mobile-map iframe{
@@ -324,7 +337,6 @@ a:hover{color: #F05822; filter: brightness(.8);}
         height: 300px;
     }
 }
-.case-study .common-primary-heading span{font-weight: 400; font-family: PTnarrow-regular, sans-serif; color: #F05822;}
 /* Contact  */
 .contactUs #contactForm span.cf7span-class.wpcf7-valid, .contactUs #contactForm span.cf7span-class.wpcf7-not-valid {position: relative;}
 .contactUs #contactForm span.cf7span-class.wpcf7-valid:after, .contactUs #contactForm span.cf7span-class.wpcf7-not-valid:after {    
@@ -339,4 +351,8 @@ a:hover{color: #F05822; filter: brightness(.8);}
 }
 .contactUs #contactForm span.cf7span-class.wpcf7-not-valid:after{background-color: red;}
 .contactUs #contactForm span.cf7span-class.wpcf7-valid:after {background-color: green;}
+.contact-address-details .details a {color: #101010;}
 /* Contact  */
+.case-study .common-primary-heading span{font-weight: 400; font-family: PTnarrow-regular, sans-serif; color: #F05822;}
+.cards-details .our-people-image, .board-directors .our-people-image{transform: rotateY(180deg);}
+.grant-recipients-slider .owl-item .imgs-box a:hover{ filter: none;}

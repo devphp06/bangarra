@@ -112,20 +112,20 @@ function get_grant_recipients_slider_images($images_arr,$size){
                 if($group['heading']){?>
                     <h3 class="primary-color common-primary-heading text-white"><?php echo $group['heading']; ?></h3>
                 <?php }?>
-            <div class="container business-numbers">
-                <div class="row">
-                    <?php $subgroups = $group['in_number_data'];
-                        if($subgroups){ 
-                        foreach($subgroups as $subgroup) {
-                    ?>
-                        <div class="col-md-6 col-lg-4 busi-number-box text-center">
-                              <?php if($subgroup["icon_image"]){?><img src="<?php echo $subgroup["icon_image"]; ?>" alt="icon" class="img-fluid"><?php }?>
-                              <?php if($subgroup["value"]){?><h3 class="banner-heading active-color"><?php echo $subgroup["value"]; ?></h3><?php }?>
-                              <?php if($subgroup["subheading"]){?><p class="primary-light"><?php echo $subgroup["subheading"]; ?></p><?php }?>
-                        </div>
-                    <?php } }?>
+                <div class="container business-numbers">
+                    <div class="row">
+                        <?php $subgroups = $group['in_number_data'];
+                            if($subgroups){ 
+                            foreach($subgroups as $subgroup) {
+                        ?>
+                            <div class="col-md-6 col-lg-4 busi-number-box text-center">
+                                <?php if($subgroup["icon_image"]){?><img src="<?php echo $subgroup["icon_image"]; ?>" alt="icon" class="img-fluid"><?php }?>
+                                <?php if($subgroup["value"]){?><h3 class="banner-heading active-color"><?php echo $subgroup["value"]; ?></h3><?php }?>
+                                <?php if($subgroup["subheading"]){?><p class="primary-light"><?php echo $subgroup["subheading"]; ?></p><?php }?>
+                            </div>
+                        <?php } }?>
+                    </div>
                 </div>
-            </div>
             <?php } ?>  
         </div>
     </div>
@@ -147,7 +147,7 @@ function get_grant_recipients_slider_images($images_arr,$size){
                 </div>
                 <div class="right-side col-12 col-lg-6 d-flex align-items-center">
                     <?php if(get_field('annual_report_image')){ ?>
-                        <img src="<?php echo get_field('annual_report_image'); ?>" alt="Annual report image">
+                        <img style="width: 100%;height: auto;" src="<?php echo get_field('annual_report_image'); ?>" alt="Annual report image">
                     <?php } ?>  
                 </div>
             </div>

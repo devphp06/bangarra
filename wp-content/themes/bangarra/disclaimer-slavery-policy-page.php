@@ -5,7 +5,7 @@
 get_header();?>
 
     <!-- anonymous-information -->
-    <div class="content-main">
+    <div class="content-main disclaimer-parent-container">
       <div class="common-header-strip">
         <div class="container">
         <?php if(get_field('page_title')){?>

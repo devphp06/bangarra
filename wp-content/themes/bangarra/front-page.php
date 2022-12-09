@@ -97,7 +97,7 @@ get_header();?>
     <!-- //Our Principles -->
 
     <!-- Our People -->
-    <div class="our-people bg-gray" <?php if(get_field('our_people_background_image')){?>style="background: url(<?php echo get_field('our_people_background_image');?>) top left no-repeat;background-size: 50%;"<?php }?>>
+    <div class="our-people our-people-container bg-gray" <?php if(get_field('our_people_background_image')){?>style="background: url(<?php echo get_field('our_people_background_image');?>) top left no-repeat;"<?php }?>>
       <div class="container-fluid">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-lg-7 text-center">
