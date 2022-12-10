@@ -172,7 +172,7 @@ function get_grant_recipients_slider_images($images_arr,$size){
                         </a>
                     <?php } ?>
                 </div>
-                <div class="right-side col-12 col-lg-6 d-flex align-items-center text-center books-img bg-light">
+                <div class="our-vision-right-img right-side col-12 col-lg-6 d-flex align-items-center text-center books-img">
                     <?php if(get_field('our_vision_image')){ ?>
                     <img src="<?php echo get_field('our_vision_image'); ?>" alt="Our Vision" class="img-fluid mx-auto">
                     <?php } ?>  
