@@ -247,7 +247,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .cards-details .reverse-col {flex-direction: column-reverse;}
     .our-vision .desktop-device{margin: 30px 0;}
     .our-vision .reconciliation{width: 100%;display: block; text-align: center;}
-    .banner-main{background-position: center;}
+    .banner-main{background-position: center !important;}
     .about-us .right-side{position: initial;}
     .carbonNeutral .right-side{padding-top: 40px;}
     .our-people-container{ background-size: 66% !important;}
@@ -367,4 +367,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
 #contactForm form p label{width: 80%;}
 #contactForm form p > input{font-family: 'Roboto' !important;padding: 7px 40px !important; font-size: 20px !important; background-color: #F05822 !important; border-radius: 50px !important; transition: .3s; border-bottom: 0 !important;     margin-bottom: 20px !important;}
 .contactUs #contactForm form p label .wpcf7-not-valid-tip{position: relative; top: -45px;} 
-.contactUs #contactForm form .wpcf7-response-output{border: none; padding: 0; margin: 0;}
+/* .contactUs #contactForm form .wpcf7-response-output{border: none; padding: 0; margin: 0;} */
+.contactUs #contactForm form .wpcf7-response-output{border-radius: 25px; width: 80%; margin: 0;}
+/* .owl-slider .owl-nav button.owl-prev{margin-left: 0; margin-right: 80px;} */
+@media(max-width: 991px){.contactUs #contactForm form .wpcf7-response-output{width: 100%;}}
