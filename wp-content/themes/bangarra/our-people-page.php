@@ -51,8 +51,9 @@ get_header();?>
             <div class="card-div row">
               <?php $rows = get_field('meet_board_of_directors_repeater');
                  if($rows){
-                  foreach($rows as $row) { ?>
-                  <div class="card col">
+                  $i=0;
+                  foreach($rows as $row) { $i++;?>
+                  <div class="card col <?php if($i==2){ echo 'card2';}?>">
                     <div class="img-box">
                       <?php if($row['image']){?>
                         <img src="<?php echo $row['image'];?>" alt="img" class="img-fluid our-people-image">

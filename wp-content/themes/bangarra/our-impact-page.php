@@ -167,7 +167,7 @@ function get_grant_recipients_slider_images($images_arr,$size){
                         <?php echo get_field('our_vision_description'); ?>
                     <?php } ?>
                     <?php if(get_field('download_our_reconciliation_heading')){ ?>
-                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('annual_report_download_report_link').'"'; echo "download='report'"; }?> class="reconciliation active-color">
+                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('annual_report_download_report_link').'"'; echo "download='report'"; }?> class="reconciliation active-color webview">
                             <?php echo get_field('download_our_reconciliation_heading'); ?>
                         </a>
                     <?php } ?>
@@ -177,6 +177,11 @@ function get_grant_recipients_slider_images($images_arr,$size){
                     <img src="<?php echo get_field('our_vision_image'); ?>" alt="Our Vision" class="img-fluid mx-auto">
                     <?php } ?>  
                 </div>
+                <?php if(get_field('download_our_reconciliation_heading')){ ?>
+                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('annual_report_download_report_link').'"'; echo "download='report'"; }?> class="reconciliation active-color mobileview">
+                            <?php echo get_field('download_our_reconciliation_heading'); ?>
+                        </a>
+                    <?php } ?>
             </div>
         </div>
     </div>

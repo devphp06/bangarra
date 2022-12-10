@@ -24,7 +24,7 @@ a{text-decoration: none;}
 
 
 /* Header */
-.home .header-main{position: absolute; width: 100%; top: 0; left: 0;z-index: 999;}
+.home .header-main{position: absolute; width: 100%; top: 0; left: 0;z-index:99999;}
 .home .header-main .navbar-toggler .navbar-toggler-icon{fill: #fff; color: #fff;}
 .header-main .navbar .navbar-nav .nav-item .nav-link{font-size: 22px; line-height: 24px; font-weight: bold; color: #0B3847; background-color: transparent; border-radius: 40px; padding: 8px 16px; transition: .2s;}
 .header-main .navbar .navbar-nav .nav-item .nav-link.active, .header-main .navbar .navbar-nav li.current-menu-item a {color: #F05822 !important; background-color: #e7e7e7 !important;}
@@ -100,7 +100,7 @@ a{text-decoration: none;}
 .about-us, .contact-form, .anonymous-information, .bennelong-funds-bg{ padding: 165px 0;background: url(../images/about-bgcycle.png) top right no-repeat;}
 .contact-form{padding: 0;}
 .global-values{padding: 130px 0;}
-.global-values .left-side .heading-sm{color: #F05822; margin-bottom: 0px;}
+.global-values .left-side .heading-sm{color: #F05822; margin-bottom: 0px;font-size: 36px;}
 .about-us{position: relative;}
 .about-us .right-side{position: absolute; right: 0;}
 .global-values .global-values-left{max-width: 390px;margin-left: auto; margin-right: 0;margin-top: 120px;}
@@ -188,7 +188,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
 /* Contact us */
 .contactUs .common-header-strip .banner-heading{font-size: 60px;}
 .contactUs #contactForm{padding-bottom: 68px; max-width: 602px;}
-.contactUs #contactForm .theme-btn{padding: 7px 40px !important; font-size: 20px !important;color: yellow !important;}
+.contactUs #contactForm .theme-btn{padding: 7px 40px !important; font-size: 20px !important;}
 .contactUs #contactForm input{border: none; border-radius: 0; margin-bottom: 60px; border-bottom: 1px solid #0B3847; padding: 0; font-size: 20px; font-family: PTnarrow-regular, sans-serif; background: transparent;}
 .contactUs #contactForm input::placeholder{color: #0B3847;}
 .contactUs #contactForm input:focus{box-shadow: none;}
@@ -215,9 +215,6 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .theme-btn{font-size: 18px;}
 
 }
-@media(min-width: 992px){
-    .bennelong-funds .row .left-side{max-width: 600px;}
-}
 @media(max-width: 991px){
     .contactUs .common-header-strip .banner-heading{font-size: 50px;}
     .footer-main .footer-inner .footer-bottom .footer-list{flex-direction: column; align-items: center;}
@@ -228,7 +225,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .common-primary-heading, .bennelong-funds .left-side h3{font-size: 40px;}
     .heading-sm{font-size: 30px;}
     .our-business .business-inner .business-numbers > .row{justify-content: space-between;}
-    .our-business .business-inner .business-numbers .busi-number-box{border-right: none !important; border-bottom: 1px solid #B8DCEE; margin: 0 auto 20px; width: calc(50% - 20px);}
+    .our-business .business-inner .business-numbers .busi-number-box{border-right: none !important; border-bottom: 1px solid #B8DCEE; margin: 0 auto 20px; width: 100%;}
     .our-business{padding: 40px 80px;}
     .our-business .business-inner .date{margin-top: 100px;}
     .our-people .owl-slider{padding: 0 8px;}
@@ -256,6 +253,9 @@ a:hover{color: #F05822; filter: brightness(.8);}
     #contactForm form p label{width: 100% !important;}
 }
 @media(max-width: 767px){
+    .owl-slider .owl-nav button.owl-prev {margin-left:0;}
+    .owl-slider .owl-nav button.owl-next {margin-right: 0;}
+    .our-business .business-inner .business-carousel .owl-dots{bottom: 50px;}
     .footer-main .footer-inner .footer-top .content h3{font-size: 28px;}
     .footer-main .footer-inner .footer-top{padding: 28px 0px;}
     .footer-main .footer-inner .footer-center p{font-size: 24px;}
@@ -264,7 +264,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .common-primary-heading, .bennelong-funds .left-side h3{font-size: 35px;}
     .heading-sm{font-size: 28px;}
     .banner-heading{font-size: 40px;}
-    .our-business .business-inner .business-numbers .busi-number-box{width: 100%; max-width: 220px;}
+    .our-business .business-inner .business-numbers .busi-number-box{width: 100%;}
     .our-business .business-inner .date{margin-top: 54px;}
     .our-business{padding: 40px 20px;}
     .our-business .business-inner .carousel .carousel-indicators button{height: 8px; width: 8px;}
@@ -375,5 +375,12 @@ a:hover{color: #F05822; filter: brightness(.8);}
 /* .contactUs #contactForm form .wpcf7-response-output{border: none; padding: 0; margin: 0;} */
 .contactUs #contactForm form .wpcf7-response-output{border-radius: 25px; width: 80%; margin: 0;}
 /* .owl-slider .owl-nav button.owl-prev{margin-left: 0; margin-right: 80px;} */
-@media(max-width: 991px){.contactUs #contactForm form .wpcf7-response-output{width: 100%;}}
+@media(max-width: 991px){.reconciliation.webview{display: none;}.reconciliation.mobileview{display: block;margin-top: 20px;}.contactUs #contactForm form .wpcf7-response-output{width: 100%;}}
 @media(max-width:407px){.our-people{background-size: 250px !important;}}
+@media(min-width:992px){
+    .reconciliation.webview{display: block;}
+    .reconciliation.mobileview{display: none;}
+    .board-directors .common-primary-heading{
+        margin-top: 100px;  
+    }
+}

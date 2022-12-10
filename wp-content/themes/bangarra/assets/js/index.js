@@ -49,6 +49,7 @@ jQuery(document).ready(function ($) {
         autoplay: true,
         autoplayTimeout: 2000, 
         margin:10,
+        autoplayHoverPause:true,
         responsive:{
             0:{
                 items:3,
