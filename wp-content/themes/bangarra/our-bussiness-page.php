@@ -10,7 +10,7 @@ get_header();?>
             <div class="row">
               <div class="banner-sec">
               <?php if(get_field('banner_heading')){?>
-                <h1 class="banner-heading"><?php echo get_field('banner_heading'); ?></h1>
+                <h1 class="banner-heading banner-businesses-heading "><?php echo get_field('banner_heading'); ?></h1>
               <?php }?>
               </div>
             </div>
@@ -22,7 +22,7 @@ get_header();?>
         <div class="bennelong-funds">
           <div class="container">
             <div class="row bennelong-row">
-              <div class="left-side col-12 col-md-6">
+              <div class="left-side col-12 col-md-6 bennelong-about">
                 <?php if(get_field('bennelong_funds_heading')){?><h3 class="primary-color"><?php echo get_field('bennelong_funds_heading'); ?></h3><?php }?>
                 <?php if(get_field('bennelong_funds_desc')){?><?php echo get_field('bennelong_funds_desc'); ?><?php }?>
               </div>
@@ -45,7 +45,7 @@ get_header();?>
                 <img src="<?php echo get_field('crown_golf_field_image'); ?>" alt="img" class="img-fluid">
               <?php }?>
               </div> 
-              <div class="right-side col col-lg-6">
+              <div class="right-side col col-lg-6 bennelong-about">
                 <?php if(get_field('crown_golf_heading')){?><h3 class="primary-color common-primary-heading"><?php echo get_field('crown_golf_heading'); ?></h3><?php }?>
                 <?php if(get_field('crown_golf_desc')){?><?php echo get_field('crown_golf_desc'); ?><?php }?>
                 <?php if(get_field('crown_golf_bitmap_image')){?><img src="<?php echo get_field('crown_golf_bitmap_image'); ?>" class="img-fluid mt-4"><?php }?>
