@@ -140,8 +140,8 @@ function get_grant_recipients_slider_images($images_arr,$size){
                         <h3 class="primary-color common-primary-heading"><?php echo get_field('annual_report_heading'); ?></h3>
                     <?php } ?>
                     <?php if(get_field('annual_report_download_report')){ ?>
-                        <a <?php if(get_field('annual_report_download_report_link')){ echo 'href="'.get_field('annual_report_download_report_link').'"'; echo 'download="Annual report"'; } ?>>
-                            <p class="active-color"><?php echo get_field('annual_report_download_report'); ?></p>
+                        <a <?php if(get_field('annual_report_download_report_link')){ echo 'href="'.get_field('annual_report_download_report_link').'"'; echo 'download="Annual report"'; } ?> class="reconciliation webview">
+                            <p class="active-color fw-bold"><?php echo get_field('annual_report_download_report'); ?></p>
                         </a>
                     <?php } ?>
                 </div>
@@ -150,6 +150,11 @@ function get_grant_recipients_slider_images($images_arr,$size){
                         <img style="width: 100%;height: auto;" src="<?php echo get_field('annual_report_image'); ?>" alt="Annual report image">
                     <?php } ?>  
                 </div>
+                <?php if(get_field('annual_report_download_report')){ ?>
+                        <a <?php if(get_field('annual_report_download_report_link')){ echo 'href="'.get_field('annual_report_download_report_link').'"'; echo 'download="Annual report"'; } ?> class="reconciliation mobileview">
+                            <p class="active-color fw-bold"><?php echo get_field('annual_report_download_report'); ?></p>
+                        </a>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -167,7 +172,7 @@ function get_grant_recipients_slider_images($images_arr,$size){
                         <?php echo get_field('our_vision_description'); ?>
                     <?php } ?>
                     <?php if(get_field('download_our_reconciliation_heading')){ ?>
-                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('download_our_reconciliation_link').'"'; echo "download='Action plan report'"; }?> class="reconciliation active-color webview">
+                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('download_our_reconciliation_link').'"'; echo "download='Action plan report'"; }?> class="reconciliation active-color webview fw-bold">
                             <?php echo get_field('download_our_reconciliation_heading'); ?>
                         </a>
                     <?php } ?>
@@ -178,7 +183,7 @@ function get_grant_recipients_slider_images($images_arr,$size){
                     <?php } ?>  
                 </div>
                 <?php if(get_field('download_our_reconciliation_heading')){ ?>
-                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('download_our_reconciliation_link').'"'; echo "download='Action plan report'"; }?> class="reconciliation active-color mobileview">
+                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('download_our_reconciliation_link').'"'; echo "download='Action plan report'"; }?> class="reconciliation active-color mobileview fw-bold">
                             <?php echo get_field('download_our_reconciliation_heading'); ?>
                         </a>
                     <?php } ?>

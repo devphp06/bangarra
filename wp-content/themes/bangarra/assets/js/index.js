@@ -1,22 +1,14 @@
 jQuery(document).ready(function ($) {
     $("#ourPeopleSlider").owlCarousel({
-        items:1,
+        items: 1,
+        margin: 10,
         nav: true,
         loop: true,
         responsiveClass:true,
             responsive:{
                 390:{
-                    items:1,
-                },
-                425:{
-                    items:1.5,
-                },
-                500:{
                     items:2,
                 },
-                // 680:{
-                //     items:2,
-                // },
                 767:{
                     items:3,
                 },

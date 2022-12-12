@@ -6,7 +6,7 @@ get_header();?>
     <!-- banner -->
     <div class="banner-main banner-main-circle" <?php if(get_field('banner_image')){?>style="background-image: url(<?php echo get_field('banner_image');?>);"<?php }?>>
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="banner-sec">
             <?php if(get_field('banner_heading')){?><h1 class="banner-heading"><?php echo get_field('banner_heading');?></h1><?php }?>
             <?php if(get_field('banner_text')){?><p class="text-white"><?php echo get_field('banner_text');?></p><?php }?>
@@ -64,9 +64,13 @@ get_header();?>
                 <?php } }?>
               </div>
               <?php if($in_num_gp == 'in_number_business_group' && get_field('in_number_date','option') ){?>
-                <div class="date" style="display: flex; justify-content: flex-end; width: 100%;">
-                  <p><?php echo get_field('in_number_date','option'); ?></p>
+                <div class="container business-numbers">
+                  <div class="row align-items-end">
+                  <div class="date" style="display: flex; justify-content: flex-end; width: 100%;">
+                    <p><?php echo get_field('in_number_date','option'); ?></p>
+                  </div>
                 </div>
+              </div>
               <?php }?>
             </div> 
           </div>          
@@ -111,7 +115,7 @@ get_header();?>
                 if($rows){
                     foreach($rows as $row)
                     { ?>
-                        <div class="card">
+                        <div class="item">
                             <div class="img-box">
                             <?php if($row['image']){?>
                               <img src="<?php echo $row['image'];?>" alt="img" class="img-fluid">

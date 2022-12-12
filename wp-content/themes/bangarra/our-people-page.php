@@ -48,12 +48,12 @@ get_header();?>
             <?php }?>
           </div>
           <div class="right-side col-lg-8">
-            <div class="card-div row">
+            <div class="row">
               <?php $rows = get_field('meet_board_of_directors_repeater');
                  if($rows){
                   $i=0;
                   foreach($rows as $row) { $i++;?>
-                  <div class="card col <?php if($i==2){ echo 'card2';}?>">
+                  <div class="col-md-6 <?php if($i==2){ echo 'card2';}?>">
                     <div class="img-box">
                       <?php if($row['image']){?>
                         <img src="<?php echo $row['image'];?>" alt="img" class="img-fluid our-people-image">
