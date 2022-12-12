@@ -167,7 +167,7 @@ function get_grant_recipients_slider_images($images_arr,$size){
                         <?php echo get_field('our_vision_description'); ?>
                     <?php } ?>
                     <?php if(get_field('download_our_reconciliation_heading')){ ?>
-                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('annual_report_download_report_link').'"'; echo "download='report'"; }?> class="reconciliation active-color webview">
+                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('download_our_reconciliation_link').'"'; echo "download='Action plan report'"; }?> class="reconciliation active-color webview">
                             <?php echo get_field('download_our_reconciliation_heading'); ?>
                         </a>
                     <?php } ?>
@@ -178,7 +178,7 @@ function get_grant_recipients_slider_images($images_arr,$size){
                     <?php } ?>  
                 </div>
                 <?php if(get_field('download_our_reconciliation_heading')){ ?>
-                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('annual_report_download_report_link').'"'; echo "download='report'"; }?> class="reconciliation active-color mobileview">
+                        <a <?php if(get_field('download_our_reconciliation_link')){ echo 'href="'.get_field('download_our_reconciliation_link').'"'; echo "download='Action plan report'"; }?> class="reconciliation active-color mobileview">
                             <?php echo get_field('download_our_reconciliation_heading'); ?>
                         </a>
                     <?php } ?>
@@ -214,7 +214,7 @@ function get_grant_recipients_slider_images($images_arr,$size){
                         <?php echo get_field('carbon_neutral_description'); ?>
                     <?php } ?>
                     <?php if(get_field('carbon_neutral_read_more_text')){ ?>
-                        <a href="<?php if(get_field('carbon_neutral_read_more_link')){ echo get_field('carbon_neutral_read_more_link'); } ?>" class="reconciliation active-color"><?php echo get_field('carbon_neutral_read_more_text'); ?></a>
+                        <a href="<?php if(get_field('carbon_neutral_read_more_link')){ echo get_field('carbon_neutral_read_more_link'); } ?>" class="reconciliation active-color" target="_blank"><?php echo get_field('carbon_neutral_read_more_text'); ?></a>
                     <?php } ?>                
                 </div>
                 <div class="right-side col-12 col-lg-6 d-flex align-items-center text-center books-img">

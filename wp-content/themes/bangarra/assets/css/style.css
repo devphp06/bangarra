@@ -97,7 +97,7 @@ a{text-decoration: none;}
 
 /* principle page */
 .principle-banners{background-image: url(../images/our-principles.png);}
-.about-us, .contact-form, .anonymous-information, .bennelong-funds-bg{ padding: 165px 0;background: url(../images/about-bgcycle.png) top right no-repeat;}
+.about-us, .contact-form, .anonymous-information, .bennelong-funds-bg{ padding: 165px 0;background: url(../images/Oval_home.png) top right no-repeat;}
 .contact-form{padding: 0;}
 .global-values{padding: 130px 0;}
 .global-values .left-side .heading-sm{color: #F05822; margin-bottom: 0px;font-size: 36px;}
@@ -364,7 +364,6 @@ a:hover{color: #F05822; filter: brightness(.8);}
 /* Contact  */
 .case-study .our-vision-right-img {background-color: #fff !important; padding: 48px;}
 .case-study .common-primary-heading span{font-weight: 400; font-family: PTnarrow-regular, sans-serif; color: #F05822;}
-.cards-details .our-people-image, .board-directors .our-people-image{transform: rotateY(180deg);}
 .grant-recipients-slider .owl-item .imgs-box a:hover{ filter: none;}
 /* page not found */
 .page-not-found { height: 80vh;}
