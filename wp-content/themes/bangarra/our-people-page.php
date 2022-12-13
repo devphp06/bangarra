@@ -56,7 +56,7 @@ get_header();?>
                   <div class="col-md-6 <?php if($i==2){ echo 'card2';}?>">
                     <div class="img-box">
                       <?php if($row['image']){?>
-                        <img src="<?php echo $row['image'];?>" alt="img" class="img-fluid our-people-image">
+                        <img src="<?php echo $row['image'];?>" alt="img" class="img-fluid our-people-image board-directors-people-image">
                       <?php }?>
                     </div>
                     <div class="people-detail">

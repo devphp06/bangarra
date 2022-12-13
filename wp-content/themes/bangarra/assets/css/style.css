@@ -126,9 +126,8 @@ background-position: bottom;}
 .cards-details{padding: 145px 0;}
 .people-detail .designation{font-size: 30px;}
 .our-people-number{padding-bottom: 190px;}
-.cards-details .our-people-image {
-    border-radius: 0 100px 0 0;
-}
+.cards-details .our-people-image {border-radius: 100px 0 0 0;}
+.board-directors .board-directors-people-image {border-radius: 150px 0 0 0;}
 /* Ends our people */
 
 /* our impact */
@@ -326,7 +325,8 @@ a:hover{color: #F05822; filter: brightness(.8);}
    .our-business { background-size: calc(100% - 134px) !important; }
 }
 @media(max-width: 576px){
-    .cards-details .our-people-image, .board-directors .our-people-image {border-radius: 100px 0 0 0;}
+    .cards-details .our-people-image {border-radius: 0 100px 0 0;}
+    .board-directors .board-directors-people-image {border-radius: 0 150px 0 0;}
     .header-main #navbarNavDropdown{top: 60px;}
     .footer-main .footer-inner .footer-top .content h3, .footer-main .footer-inner .footer-center p{font-size: 20px;}
     .banner-main .banner-sec h1{font-size: 40px;}
