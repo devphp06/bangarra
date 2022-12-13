@@ -61,7 +61,8 @@ background-position: bottom;}
 /* Endcrown-golf */
 
 /* Our-Businesses */
-.our-business{padding: 190px 120px 60px; background: url(../images/bgcycle_2.png) top left no-repeat;
+.our-business{padding: 190px 120px 60px;}
+.in_number_our-business{padding: 190px 120px 60px; background: url(../images/bgcycle_2.png) top left no-repeat;
     background-size: 50% !important; background-color: #0B3847;}
 
 .our-business .business-inner{display: flex; flex-direction: column; align-items: center; justify-content: center;}

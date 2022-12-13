@@ -57,7 +57,7 @@ get_header();?>
 
 
         <!-- Our Business section -->
-        <div class="our-business primary-background container-fluid">
+        <div class="our-business in_number_our-business primary-background container-fluid">
           <div class="business-inner">
             <?php $group = get_field('in_number_business_group','option'); 
             if($group){ 
