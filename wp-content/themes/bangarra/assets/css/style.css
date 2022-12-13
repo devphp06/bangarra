@@ -61,7 +61,9 @@ background-position: bottom;}
 /* Endcrown-golf */
 
 /* Our-Businesses */
-.our-business{padding: 190px 120px 60px;}
+.our-business{padding: 190px 120px 60px; background: url(../images/bgcycle_2.png) top left no-repeat;
+    background-size: 50% !important; background-color: #0B3847;}
+
 .our-business .business-inner{display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .our-business .business-inner .business-numbers > .row{justify-content: center;}
 .our-business .business-inner .business-numbers{padding-top: 40px; max-width: 1120px;}
@@ -124,6 +126,9 @@ background-position: bottom;}
 .cards-details{padding: 145px 0;}
 .people-detail .designation{font-size: 30px;}
 .our-people-number{padding-bottom: 190px;}
+.cards-details .our-people-image {
+    border-radius: 0 100px 0 0;
+}
 /* Ends our people */
 
 /* our impact */
@@ -251,13 +256,16 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .cards-details .reverse-col {flex-direction: column-reverse;}
     .our-vision .desktop-device{margin: 30px 0;}
     .our-vision .reconciliation{width: 100%;display: block; text-align: center;}
-    .banner-main{background-position: center !important;}
+    .home .banner-main {background-position: 20% center !important;}
     .about-us .right-side{position: initial;}
     .carbonNeutral .right-side{padding-top: 40px;}
-    #contactForm form p label{width: 100% !important;}
     .banner-main-circle::after {width: 743px !important;}
+    .home .banner-main .banner-sec {max-width: 800px;padding-top: 130px; }
 }
 @media(max-width: 767px){
+    .home .banner-main .banner-sec {padding-top: 90px;}
+    .home .banner-main {height: 80vh; min-height: 600px;}
+    .home .banner-main .banner-sec h1 { margin-bottom: 15px; }
     .owl-slider .owl-nav button.owl-prev {margin-left:0;}
     .owl-slider .owl-nav button.owl-next {margin-right: 0;}
     .our-business .business-inner .business-carousel .owl-dots{bottom: 50px;}
@@ -269,8 +277,10 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .common-primary-heading, .bennelong-funds .left-side h3{font-size: 35px;}
     .heading-sm{font-size: 28px;}
     .banner-heading{font-size: 40px;}
-    .our-business .business-inner .business-numbers .busi-number-box{width: 100%;}
-    .our-business .business-inner .date{margin-top: 54px;}
+    .our-business {background-size: 82.6% !important;}
+    .our-business .business-inner .business-numbers .busi-number-box{max-width: 320px;}
+    .our-business .business-inner .date{margin-top: 54px; width: 100%;}
+    .our-business .business-inner .date p {text-align: center;}
     .our-business{padding: 40px 20px;}
     .our-business .business-inner .carousel .carousel-indicators button{height: 8px; width: 8px;}
     .our-business .business-inner .carousel .carousel-indicators{bottom: -70px;}
@@ -281,6 +291,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .crown-golf .left-side img{max-width: calc(100% - 134px); min-width: 250px;}
     .crown-golf .row{flex-direction: column-reverse;}
     .crown-golf .right-side{margin-bottom: 45px;}
+    .crown-golf .right-side img {max-width: 190px; margin: 0 !important; }
     .crown-golf{padding-bottom: 0;}
     .theme-btn{padding: 5px 30px;}
     .bennelong-funds .text-end.col-12{text-align: center !important;max-width:75%;margin: 0 auto;}
@@ -299,7 +310,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .person-name{font-size: 22px; line-height: 28px; padding: 5px 0;}
     .people-detail .heading-sm{font-size: 18px; line-height: 28px;}
     .board-directors .right-side .card-div .img-box{margin-bottom: 10px;}
-    .people-detail .designation{font-size: 18px;}
+    .people-detail .designation{font-size: 18px; padding: 5px 0 15px 0 !important;}
     .cards-details .people-detail .person-name{padding: 25px 0 5px;}
     .grant-recipients{padding-bottom: 74px;}
     .case-study{padding: 28px 0 24px;}
@@ -311,9 +322,11 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .carbonNeutral{padding: 46px 0 48px;}
     .about-us, .contact-form, .anonymous-information, .bennelong-funds-bg{background-image: none;}
     .banner-main-circle::after{ width:770px !important;}
+    .common-banner-main.banner-main {background-position: 35% center; padding: 58px 0; height: auto; }
+   .our-business { background-size: calc(100% - 134px) !important; }
 }
 @media(max-width: 576px){
-    .cards-details .our-people-image, .board-directors .our-people-image{transform: rotateY(180deg);}
+    .cards-details .our-people-image, .board-directors .our-people-image {border-radius: 100px 0 0 0;}
     .header-main #navbarNavDropdown{top: 60px;}
     .footer-main .footer-inner .footer-top .content h3, .footer-main .footer-inner .footer-center p{font-size: 20px;}
     .banner-main .banner-sec h1{font-size: 40px;}
@@ -389,20 +402,32 @@ background-color: red;
 /* page not found */
 .page-not-found { height: 80vh;}
 .page-not-found .row h1{text-align: center;}
-#contactForm form p label{width: 80%;}
+#contactForm form p label{width: 100%;}
 #contactForm form p > input{font-family: 'Roboto' !important;padding: 7px 40px !important; font-size: 20px !important; background-color: #F05822 !important; border-radius: 50px !important; transition: .3s; border-bottom: 0 !important;     margin-bottom: 20px !important;}
 .contactUs #contactForm form p label .wpcf7-not-valid-tip{position: relative; top: -45px;} 
 /* .contactUs #contactForm form .wpcf7-response-output{border: none; padding: 0; margin: 0;} */
-.contactUs #contactForm form .wpcf7-response-output{border-radius: 25px; width: 80%; margin: 0;}
+.contactUs #contactForm form .wpcf7-response-output{border-radius: 25px; margin: 0;}
 /* .owl-slider .owl-nav button.owl-prev{margin-left: 0; margin-right: 80px;} */
 @media(max-width: 991px){.reconciliation.webview{display: none;}.reconciliation.mobileview{display: block;margin-top: 20px;}.contactUs #contactForm form .wpcf7-response-output{width: 100%;}}
-@media(max-width:407px){.our-people{background-size: 250px !important;}}
+@media(max-width:407px){.our-people{background-size: 250px !important;}
+.our-business { background-size: 250px !important;}
+}
 @media(min-width:992px){
     .reconciliation.webview{display: block;}
     .reconciliation.mobileview{display: none;}
     .board-directors .common-primary-heading{
         margin-top: 100px;  
     }
+}
+@media(max-width:420px) {
+.common-banner-main.banner-main {
+        background-position: 45% center;
+        padding: 58px 0;
+    }
+.common-banner-main.banner-main .banner-sec h1 {
+    font-size: 34px;
+    max-width: 200px;
+}
 }
 
 

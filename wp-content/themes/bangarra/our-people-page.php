@@ -5,11 +5,11 @@
 get_header();?>
 
     <!-- banner -->
-    <div class="people-banners banner-main" <?php if(get_field('banner_image')){?>style="background-image: url(<?php echo get_field('banner_image');?>);"<?php }?>>
+    <div class="people-banners banner-main common-banner-main" <?php if(get_field('banner_image')){?>style="background-image: url(<?php echo get_field('banner_image');?>);"<?php }?>>
       <div class="container">
         <div class="row">
           <div class="banner-sec">
-            <?php if(get_field('banner_heading')){?><h1 class="banner-heading"><?php echo get_field('banner_heading');?></h1><?php }?>
+            <?php if(get_field('banner_heading')){?><h1 class="banner-heading banner-businesses-heading"><?php echo get_field('banner_heading');?></h1><?php }?>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@ get_header();?>
                 <div class="people-detail col-12 col-lg-8">
                   <?php if($row['name']){?><h3 class="person-name"><?php echo $row['name'];?></h3><?php }?>  
                   <?php if($row['qualification']){?><p class="heading-sm"><?php echo $row['qualification'];?></p><?php }?>  
-                  <?php if($row['designation']){?><span class="designation person-name d-block pt-3"><?php echo $row['designation'];?></span><?php }?>  
+                  <?php if($row['designation']){?><span class="designation person-name d-block"><?php echo $row['designation'];?></span><?php }?>  
                   <?php if($row['description']){?><?php echo $row['description'];?><?php }?>  
                 </div>
                 <div class="right-side col-12 col-lg-4 text-center">
@@ -118,7 +118,7 @@ get_header();?>
                 <div class="people-detail col-12 col-lg-8">
                   <?php if($row['name']){?><h3 class="person-name"><?php echo $row['name'];?></h3><?php }?>  
                   <?php if($row['qualification']){?><p class="heading-sm"><?php echo $row['qualification'];?></p><?php }?>  
-                  <?php if($row['designation']){?><span class="designation person-name d-block pt-3"><?php echo $row['designation'];?></span><?php }?>  
+                  <?php if($row['designation']){?><span class="designation person-name d-block"><?php echo $row['designation'];?></span><?php }?>  
                   <?php if($row['description']){?><?php echo $row['description'];?><?php }?>  
                 </div>
                 <div class="right-side col-12 col-lg-4 text-center">

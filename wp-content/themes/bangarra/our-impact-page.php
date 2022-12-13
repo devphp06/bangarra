@@ -23,11 +23,11 @@ function get_grant_recipients_slider_images($images_arr,$size){
 ?>   
 
     <!-- banner -->
-    <div class="banner-impact people-banners banner-main" <?php if(get_field('banner_image')){?>style="background: url(<?php echo get_field('banner_image');?>);"<?php }?>>
+    <div class="banner-impact people-banners banner-main common-banner-main" <?php if(get_field('banner_image')){?>style="background: url(<?php echo get_field('banner_image');?>);"<?php }?>>
         <div class="container">
           <div class="row">
             <div class="banner-sec">
-                <?php if(get_field('banner_heading')){?><h1 class="banner-heading"><?php echo get_field('banner_heading');?></h1><?php }?> 
+                <?php if(get_field('banner_heading')){?><h1 class="banner-heading banner-businesses-heading"><?php echo get_field('banner_heading');?></h1><?php }?> 
             </div>
           </div>
         </div>

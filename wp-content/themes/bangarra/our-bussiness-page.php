@@ -5,7 +5,7 @@
 get_header();?>
 
         <!-- banner -->
-        <div class="banner-main" <?php if(get_field('banner_image')){?>style="background-image: url(<?php echo get_field('banner_image');?>);"<?php }?>>
+        <div class="banner-main common-banner-main" <?php if(get_field('banner_image')){?>style="background-image: url(<?php echo get_field('banner_image');?>);"<?php }?>>
           <div class="container">
             <div class="row">
               <div class="banner-sec">

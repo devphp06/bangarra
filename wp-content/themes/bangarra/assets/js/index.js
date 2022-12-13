@@ -6,8 +6,11 @@ jQuery(document).ready(function ($) {
         loop: true,
         responsiveClass:true,
             responsive:{
-                390:{
+                0:{
                     items:2,
+                },
+                490: {
+                    items: 2,
                 },
                 767:{
                     items:3,
