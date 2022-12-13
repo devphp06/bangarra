@@ -321,7 +321,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .carbonNeutral{padding: 46px 0 48px;}
     .about-us, .contact-form, .anonymous-information, .bennelong-funds-bg{background-image: none;}
     .banner-main-circle::after{ width:770px !important;}
-    .common-banner-main.banner-main {background-position: 35% center; padding: 58px 0; height: auto; }
+    .common-banner-main.banner-main {background-position: 35% center !important; padding: 58px 0; height: auto; }
    .our-business { background-size: calc(100% - 134px) !important; }
 }
 @media(max-width: 576px){
@@ -421,7 +421,7 @@ background-color: red;
 }
 @media(max-width:420px) {
 .common-banner-main.banner-main {
-        background-position: 45% center;
+        background-position: 45% center !important;
         padding: 58px 0;
     }
 .common-banner-main.banner-main .banner-sec h1 {
