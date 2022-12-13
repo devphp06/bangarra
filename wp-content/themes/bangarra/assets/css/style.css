@@ -262,6 +262,14 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .banner-main-circle::after {width: 743px !important;}
     .home .banner-main .banner-sec {max-width: 800px;padding-top: 130px; }
 }
+
+@media (min-width: 768px) and (max-width: 1124px) {
+    .common-banner-main.banner-main {
+            background-position: 35% center !important;
+            padding: 90px 0;
+            height: auto;
+        }
+}
 @media(max-width: 767px){
     .home .banner-main .banner-sec {padding-top: 90px;}
     .home .banner-main {height: 80vh; min-height: 600px;}
@@ -322,8 +330,8 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .carbonNeutral{padding: 46px 0 48px;}
     .about-us, .contact-form, .anonymous-information, .bennelong-funds-bg{background-image: none;}
     .banner-main-circle::after{ width:770px !important;}
-    .common-banner-main.banner-main {background-position: 35% center !important; padding: 58px 0; height: auto; }
-   .our-business { background-size: calc(100% - 134px) !important; }
+    .common-banner-main.banner-main {background-position: 10% center !important; padding: 58px 0; height: auto; }
+   .in_number_our-business { background-size: calc(100% - 134px) !important; }
 }
 @media(max-width: 576px){
     .cards-details .our-people-image {border-radius: 0 100px 0 0;}
