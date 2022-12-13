@@ -334,7 +334,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
    .in_number_our-business { background-size: calc(100% - 134px) !important; }
 }
 @media(max-width: 576px){
-    .cards-details .our-people-image {border-radius: 0 100px 0 0;}
+    .cards-details .our-people-image {border-radius: 0 150px 0 0;width: 100%;max-width: 100%;}
     .board-directors .board-directors-people-image {border-radius: 0 150px 0 0;}
     .header-main #navbarNavDropdown{top: 60px;}
     .footer-main .footer-inner .footer-top .content h3, .footer-main .footer-inner .footer-center p{font-size: 20px;}
@@ -367,16 +367,10 @@ a:hover{color: #F05822; filter: brightness(.8);}
 
 }
 @media(max-width: 460px){
-    .contactUs .contact-address-details .mobile-map iframe{
-        width: 340px;
-        height: 340px;
-    }
+    .contactUs .contact-address-details .mobile-map iframe{width: 340px;height: 340px;}
 }
 @media(max-width: 360px){
-    .contactUs .contact-address-details .mobile-map iframe{
-        width: 300px;
-        height: 300px;
-    }
+    .contactUs .contact-address-details .mobile-map iframe{width: 300px;height: 300px;}
 }
 /* Contact  */
 .contactUs #contactForm span.cf7span-class.wpcf7-valid, .contactUs #contactForm span.cf7span-class.wpcf7-not-valid {position: relative;}
@@ -389,7 +383,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     border-radius: 50%;
 }
 .contactUs #contactForm span.cf7span-class.wpcf7-not-valid:after{
-background-color: red;
+    background-color: red;
     content: "!";
     line-height: 14px;
     text-align: center;
@@ -401,7 +395,7 @@ background-color: red;
     background-color: green;
     content: url("data:image/svg+xml,%3Csvg width='9' height='7' viewBox='0 0 9 7' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.00183 1.20368C8.1153 1.31715 8.1153 1.50112 8.00183 1.61459L3.02756 6.58885C2.91394 6.70247 2.72968 6.7023 2.61627 6.58847L0.266206 4.22957C0.153101 4.11604 0.153274 3.93237 0.266592 3.81905L0.882721 3.20292C0.996429 3.08921 1.18087 3.08949 1.29424 3.20354L2.61627 4.53348C2.72964 4.64753 2.91408 4.6478 3.02779 4.5341L6.97457 0.587321C7.08804 0.473852 7.27201 0.473853 7.38548 0.587321L8.00183 1.20368Z' fill='%23ffffff' /%3E%3C/svg%3E");
     line-height: 10px;
-        text-align: center;
+    text-align: center;
 }
 .contact-address-details .details a {color: #101010;}
 /* Contact  */
@@ -424,30 +418,13 @@ background-color: red;
 @media(min-width:992px){
     .reconciliation.webview{display: block;}
     .reconciliation.mobileview{display: none;}
-    .board-directors .common-primary-heading{
-        margin-top: 100px;  
-    }
+    .board-directors .common-primary-heading{margin-top: 100px;}
 }
 @media(max-width:420px) {
-.common-banner-main.banner-main {
-        background-position: 45% center !important;
-        padding: 58px 0;
-    }
-.common-banner-main.banner-main .banner-sec h1 {
-    font-size: 34px;
-    max-width: 200px;
+    .common-banner-main.banner-main {background-position: 45% center !important;padding: 58px 0;}
+    .common-banner-main.banner-main .banner-sec h1 {font-size: 34px;max-width: 200px;}
 }
-}
-
-
 .bennelong-funds-bg{background: url(../images/Oval_home.png) top right no-repeat;}
 .banner-main-circle::after{width: 767px;}
-
-
-.board-directors .our-people-image {
-   width: 100%;
-}
-
-.bennelong-about p {
-    margin-bottom: 30px;
-}
+.board-directors .our-people-image {width: 100%;}
+.bennelong-about p {margin-bottom: 30px;}
