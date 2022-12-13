@@ -21,7 +21,7 @@
                     array(
                         'theme_location'  => 'footer_menu',
                         'menu_class'      => 'menu-wrapper',
-                        'container_class' => 'footer-bottom bg-dark', 
+                        'container_class' => 'footer-bottom', 
                         'items_wrap'      => '<ul class="footer-list">%3$s</ul>',
                         'fallback_cb'     => false,
                     )

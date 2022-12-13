@@ -76,7 +76,9 @@ background-position: bottom;}
 .our-business .business-inner .business-numbers h3{line-height: 1; margin-top: 28px;}
 .our-business .business-inner .owl-carousel .owl-item .business-numbers .busi-number-box img{height: 60px; width: 60px; margin: auto;}
 .our-business .business-inner .business-carousel {position: relative;}
-.our-business .business-inner .business-carousel .owl-dots {position: absolute; left: 0; bottom: -30px; right: 0; margin: 0 auto; border-radius: 50%;}
+.our-business .business-inner .business-carousel .owl-dots {position: absolute; left: 0; bottom: 50px; right: 0; margin: 0 auto; border-radius: 50%;}
+.business-carousel .owl-dots .owl-dot.active span, .business-carousel .owl-dots .owl-dot:hover span {background: #ffffff;width: 13px;height: 13px;box-shadow: 0 0 0 3px #b8dcee54;}
+.business-carousel .owl-dots .owl-dot span {width: 16px; height: 16px; background: #b8dcee54;}
 /* Ends Our-Businesses */
 
 /* our-people */
@@ -169,7 +171,8 @@ a:hover{color: #F05822; filter: brightness(.8);}
 /* EndsOur Vision */
 
 /* Sustainability & Community */
-.sustainability{background: url(../images/sustainability.jpg); height: 800px; display: flex; align-items: center; justify-content: center;}
+.sustainability {background: url(../images/sustainability.jpg);height: 800px;display: flex;align-items: center;justify-content: center;background-size: cover !important;background-position: center !important;background-repeat: no-repeat !important;width: 100%;}
+/* .sustainability{background: url(../images/sustainability.jpg); height: 800px; display: flex; align-items: center; justify-content: center; background-size: cover; background-position: center; background-repeat: no-repeat;width: 100%;} */
 .sustainability .sustainability-content{max-width: 800px; margin: auto;}
 .sustainability .sustainability-content p{font-size: 20px; color: #fff;}
 /* Ends Sustainability & Community */
@@ -186,7 +189,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
 .footer-main .footer-inner .footer-top .content h3{color: #fff; font-size: 50px; font-family: PTnarrow-regular, sans-serif; padding: 0 20px; margin-bottom: 0;}
 .footer-main .footer-inner .footer-center{width: 100%; height: 512px; background: url(../images/FirstNations.jpg); background-size: cover; display: flex; align-items: center; justify-content: center;}
 .footer-main .footer-inner .footer-center p{font-size: 30px; font-family: PTnarrow-regular, sans-serif; max-width: 844px; padding: 0 16px;}
-.footer-main .footer-inner .footer-bottom{padding: 45px 20px; display: flex; align-items: center; justify-content: center;}
+.footer-main .footer-inner .footer-bottom{background-color: #282728;padding: 45px 20px; display: flex; align-items: center; justify-content: center;}
 .footer-main .footer-inner .footer-bottom .footer-list{display: flex; margin: 0; flex-wrap: wrap; padding: 0; justify-content: center;}
 .footer-main .footer-inner .footer-bottom .footer-list .footer-item{list-style: none; display: inline-block; padding: 0 20px;}
 .footer-main .footer-inner .footer-bottom .footer-list .footer-item .footer-link{text-decoration: none; display: block; text-align: center; font-family: 'Open Sans', sans-serif; font-weight: 600;}
@@ -288,7 +291,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .our-business {background-size: 82.6% !important;}
     .our-business .business-inner .business-numbers .busi-number-box{max-width: 320px;}
     .our-business .business-inner .date{margin-top: 54px; width: 100%;}
-    .our-business .business-inner .date p {text-align: center;}
+    .our-business .business-inner .date p {text-align: center;font-size: 16px;}
     .our-business{padding: 40px 20px;}
     .our-business .business-inner .carousel .carousel-indicators button{height: 8px; width: 8px;}
     .our-business .business-inner .carousel .carousel-indicators{bottom: -70px;}
@@ -334,7 +337,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
    .in_number_our-business { background-size: calc(100% - 134px) !important; }
 }
 @media(max-width: 576px){
-    .cards-details .our-people-image {border-radius: 0 150px 0 0;width: 100%;max-width: 100%;}
+    .cards-details .our-people-image {border-radius: 0 100px 0 0; width: 100%; max-width: 100%;}
     .board-directors .board-directors-people-image {border-radius: 0 150px 0 0;}
     .header-main #navbarNavDropdown{top: 60px;}
     .footer-main .footer-inner .footer-top .content h3, .footer-main .footer-inner .footer-center p{font-size: 20px;}
@@ -349,7 +352,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .board-directors .div-heading::after,.board-directors .div-heading::before{ width: calc(50% - 90px);}
     .board-directors { padding: 26px 0;}
     .cards-details {padding: 58px 0;}
-    .contactUs #contactForm .theme-btn{margin: auto; display: flex; max-width: fit-content;}
+    .contactUs #contactForm .theme-btn{margin: auto; display: flex; max-width: fit-content;padding: 7px 60px !important;}
     .contactUs .common-header-strip .banner-heading{font-size: 34px;}
     .content-main .anonymous-information{padding: 30px 0 40px;}
     .header-main .navbar .navbar-brand img {max-width: 75px;}
@@ -364,13 +367,19 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .banner-main-circle::after{ width: 550px !important;}
     .owl-slider .item .img-box {height: 100%; width: 100%; overflow: hidden; }
     .banner-businesses-heading {margin-bottom:0 !important;}
-
+    .foundation-annual-report{background-image: none !important;}
 }
 @media(max-width: 460px){
-    .contactUs .contact-address-details .mobile-map iframe{width: 340px;height: 340px;}
+    .contactUs .contact-address-details .mobile-map iframe{
+        width: 340px;
+        height: 340px;
+    }
 }
 @media(max-width: 360px){
-    .contactUs .contact-address-details .mobile-map iframe{width: 300px;height: 300px;}
+    .contactUs .contact-address-details .mobile-map iframe{
+        width: 300px;
+        height: 300px;
+    }
 }
 /* Contact  */
 .contactUs #contactForm span.cf7span-class.wpcf7-valid, .contactUs #contactForm span.cf7span-class.wpcf7-not-valid {position: relative;}
@@ -383,7 +392,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
     border-radius: 50%;
 }
 .contactUs #contactForm span.cf7span-class.wpcf7-not-valid:after{
-    background-color: red;
+background-color: red;
     content: "!";
     line-height: 14px;
     text-align: center;
@@ -395,11 +404,11 @@ a:hover{color: #F05822; filter: brightness(.8);}
     background-color: green;
     content: url("data:image/svg+xml,%3Csvg width='9' height='7' viewBox='0 0 9 7' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.00183 1.20368C8.1153 1.31715 8.1153 1.50112 8.00183 1.61459L3.02756 6.58885C2.91394 6.70247 2.72968 6.7023 2.61627 6.58847L0.266206 4.22957C0.153101 4.11604 0.153274 3.93237 0.266592 3.81905L0.882721 3.20292C0.996429 3.08921 1.18087 3.08949 1.29424 3.20354L2.61627 4.53348C2.72964 4.64753 2.91408 4.6478 3.02779 4.5341L6.97457 0.587321C7.08804 0.473852 7.27201 0.473853 7.38548 0.587321L8.00183 1.20368Z' fill='%23ffffff' /%3E%3C/svg%3E");
     line-height: 10px;
-    text-align: center;
+        text-align: center;
 }
 .contact-address-details .details a {color: #101010;}
 /* Contact  */
-.case-study .our-vision-right-img {background-color: #fff !important; padding: 48px;}
+.case-study .our-vision-right-img {padding: 48px;}
 .case-study .common-primary-heading span{font-weight: 400; font-family: PTnarrow-regular, sans-serif; color: #F05822;}
 .grant-recipients-slider .owl-item .imgs-box a:hover{ filter: none;}
 /* page not found */
@@ -418,13 +427,36 @@ a:hover{color: #F05822; filter: brightness(.8);}
 @media(min-width:992px){
     .reconciliation.webview{display: block;}
     .reconciliation.mobileview{display: none;}
-    .board-directors .common-primary-heading{margin-top: 100px;}
+    .board-directors .common-primary-heading{
+        margin-top: 100px;  
+    }
 }
 @media(max-width:420px) {
-    .common-banner-main.banner-main {background-position: 45% center !important;padding: 58px 0;}
-    .common-banner-main.banner-main .banner-sec h1 {font-size: 34px;max-width: 200px;}
+.common-banner-main.banner-main {
+        background-position: 45% center !important;
+        padding: 58px 0;
+    }
+.common-banner-main.banner-main .banner-sec h1 {
+    font-size: 34px;
+    max-width: 200px;
 }
+}
+
+
 .bennelong-funds-bg{background: url(../images/Oval_home.png) top right no-repeat;}
 .banner-main-circle::after{width: 767px;}
-.board-directors .our-people-image {width: 100%;}
-.bennelong-about p {margin-bottom: 30px;}
+
+
+.board-directors .our-people-image {
+   width: 100%;
+}
+
+.bennelong-about p {
+    margin-bottom: 30px;
+}
+
+.impact-side-bg {
+    background: url(../images/Oval_2.png) bottom right no-repeat;
+    background-color: #0B3847;
+    background-size: 302px !important;
+}

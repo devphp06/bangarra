@@ -105,7 +105,7 @@ function get_grant_recipients_slider_images($images_arr,$size){
     <!-- //Case Study -->
 
     <!-- Our Impact by Numbers -->
-    <div class="our-business impact-by-numbers primary-background container-fluid">
+    <div class="our-business impact-by-numbers primary-background container-fluid impact-side-bg">
         <div class="business-inner">
         <?php $group = get_field('in_number_impact_group','option'); 
             if($group){ 
