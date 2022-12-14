@@ -37,8 +37,7 @@ a{text-decoration: none;}
 /* Ends Header */
 
 /* banner-main */
-.banner-main{background-image: url(../images/banner.jpg); height: 44vh; background-repeat: no-repeat !important; background-size: cover; display: flex; align-items: center; 
-background-position: bottom;}
+.banner-main{background-image: url(../images/banner.jpg); height: 44vh; background-repeat: no-repeat !important; background-size: cover; display: flex; align-items: center; background-position: bottom;}
 .banner-main-circle{position: relative;}
 .banner-main-circle::after{ position: absolute; top: 0; right: 0; content: ''; background: url(../images/banner-circles.png) top right no-repeat; width:826px; height: 100%; background-position: left 170px bottom 70%;}
 .home .banner-main{background-image: url(../images/HomeBanner.jpg); height: 820px;}
@@ -129,8 +128,8 @@ background-position: bottom;}
 .cards-details{padding: 145px 0;}
 .people-detail .designation{font-size: 30px;}
 .our-people-number{padding-bottom: 190px;}
-.cards-details .our-people-image {border-radius: 100px 0 0 0;}
-.board-directors .board-directors-people-image {border-radius: 150px 0 0 0;}
+.board-directors .our-people-image {width: 100%;}
+.cards-details .our-people-image, .board-directors .board-directors-people-image {border-radius: 150px 0 0 0;}
 /* Ends our people */
 
 /* our impact */
@@ -267,11 +266,7 @@ a:hover{color: #F05822; filter: brightness(.8);}
 }
 
 @media (min-width: 768px) and (max-width: 1124px) {
-    .common-banner-main.banner-main {
-            background-position: 35% center !important;
-            padding: 90px 0;
-            height: auto;
-        }
+    .common-banner-main.banner-main {background-position: 35% center !important;padding: 90px 0;height: auto;}
 }
 @media(max-width: 767px){
     .home .banner-main .banner-sec {padding-top: 90px;}
@@ -334,11 +329,11 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .about-us, .contact-form, .anonymous-information, .bennelong-funds-bg{background-image: none;}
     .banner-main-circle::after{ width:770px !important;}
     .common-banner-main.banner-main {background-position: 10% center !important; padding: 58px 0; height: auto; }
-   .in_number_our-business { background-size: calc(100% - 134px) !important; }
+    .in_number_our-business { background-size: calc(100% - 134px) !important; }
+    .cards-details .our-people-image {width: 100%;}
 }
 @media(max-width: 576px){
-    .cards-details .our-people-image {border-radius: 0 100px 0 0; width: 100%; max-width: 100%;}
-    .board-directors .board-directors-people-image {border-radius: 0 150px 0 0;}
+    .cards-details .our-people-image, .board-directors .board-directors-people-image {border-radius:0 150px 0 0;}
     .header-main #navbarNavDropdown{top: 60px;}
     .footer-main .footer-inner .footer-top .content h3, .footer-main .footer-inner .footer-center p{font-size: 20px;}
     .banner-main .banner-sec h1{font-size: 40px;}
@@ -370,42 +365,16 @@ a:hover{color: #F05822; filter: brightness(.8);}
     .foundation-annual-report{background-image: none !important;}
 }
 @media(max-width: 460px){
-    .contactUs .contact-address-details .mobile-map iframe{
-        width: 340px;
-        height: 340px;
-    }
+    .contactUs .contact-address-details .mobile-map iframe{width: 340px;height: 340px;}
 }
 @media(max-width: 360px){
-    .contactUs .contact-address-details .mobile-map iframe{
-        width: 300px;
-        height: 300px;
-    }
+    .contactUs .contact-address-details .mobile-map iframe{width: 300px;height: 300px;}
 }
 /* Contact  */
 .contactUs #contactForm span.cf7span-class.wpcf7-valid, .contactUs #contactForm span.cf7span-class.wpcf7-not-valid {position: relative;}
-.contactUs #contactForm span.cf7span-class.wpcf7-valid:after, .contactUs #contactForm span.cf7span-class.wpcf7-not-valid:after {    
-    position: absolute;
-    top: 10px;
-    right: 0;
-    height: 13px;
-    width: 13px;
-    border-radius: 50%;
-}
-.contactUs #contactForm span.cf7span-class.wpcf7-not-valid:after{
-background-color: red;
-    content: "!";
-    line-height: 14px;
-    text-align: center;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 900;
-}
-.contactUs #contactForm span.cf7span-class.wpcf7-valid:after {
-    background-color: green;
-    content: url("data:image/svg+xml,%3Csvg width='9' height='7' viewBox='0 0 9 7' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.00183 1.20368C8.1153 1.31715 8.1153 1.50112 8.00183 1.61459L3.02756 6.58885C2.91394 6.70247 2.72968 6.7023 2.61627 6.58847L0.266206 4.22957C0.153101 4.11604 0.153274 3.93237 0.266592 3.81905L0.882721 3.20292C0.996429 3.08921 1.18087 3.08949 1.29424 3.20354L2.61627 4.53348C2.72964 4.64753 2.91408 4.6478 3.02779 4.5341L6.97457 0.587321C7.08804 0.473852 7.27201 0.473853 7.38548 0.587321L8.00183 1.20368Z' fill='%23ffffff' /%3E%3C/svg%3E");
-    line-height: 10px;
-        text-align: center;
-}
+.contactUs #contactForm span.cf7span-class.wpcf7-valid:after, .contactUs #contactForm span.cf7span-class.wpcf7-not-valid:after {position: absolute;top: 10px;right: 0;height: 13px;width: 13px;border-radius: 50%;}
+.contactUs #contactForm span.cf7span-class.wpcf7-not-valid:after{background-color: red;content: "!";line-height: 14px;text-align: center;color: #fff;font-size: 11px;font-weight: 900;}
+.contactUs #contactForm span.cf7span-class.wpcf7-valid:after {background-color: green;content: url("data:image/svg+xml,%3Csvg width='9' height='7' viewBox='0 0 9 7' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.00183 1.20368C8.1153 1.31715 8.1153 1.50112 8.00183 1.61459L3.02756 6.58885C2.91394 6.70247 2.72968 6.7023 2.61627 6.58847L0.266206 4.22957C0.153101 4.11604 0.153274 3.93237 0.266592 3.81905L0.882721 3.20292C0.996429 3.08921 1.18087 3.08949 1.29424 3.20354L2.61627 4.53348C2.72964 4.64753 2.91408 4.6478 3.02779 4.5341L6.97457 0.587321C7.08804 0.473852 7.27201 0.473853 7.38548 0.587321L8.00183 1.20368Z' fill='%23ffffff' /%3E%3C/svg%3E");line-height: 10px;text-align: center;}
 .contact-address-details .details a {color: #101010;}
 /* Contact  */
 .case-study .our-vision-right-img {padding: 48px;}
@@ -417,9 +386,7 @@ background-color: red;
 #contactForm form p label{width: 100%;}
 #contactForm form p > input{font-family: 'Roboto' !important;padding: 7px 40px !important; font-size: 20px !important; background-color: #F05822 !important; border-radius: 50px !important; transition: .3s; border-bottom: 0 !important;     margin-bottom: 20px !important;}
 .contactUs #contactForm form p label .wpcf7-not-valid-tip{position: relative; top: -45px;} 
-/* .contactUs #contactForm form .wpcf7-response-output{border: none; padding: 0; margin: 0;} */
 .contactUs #contactForm form .wpcf7-response-output{border-radius: 25px; margin: 0;}
-/* .owl-slider .owl-nav button.owl-prev{margin-left: 0; margin-right: 80px;} */
 @media(max-width: 991px){.reconciliation.webview{display: none;}.reconciliation.mobileview{display: block;margin-top: 20px;}.contactUs #contactForm form .wpcf7-response-output{width: 100%;}}
 @media(max-width:407px){.our-people{background-size: 250px !important;}
 .our-business { background-size: 250px !important;}
@@ -427,36 +394,13 @@ background-color: red;
 @media(min-width:992px){
     .reconciliation.webview{display: block;}
     .reconciliation.mobileview{display: none;}
-    .board-directors .common-primary-heading{
-        margin-top: 100px;  
-    }
+    .board-directors .common-primary-heading{margin-top: 100px;}
 }
 @media(max-width:420px) {
-.common-banner-main.banner-main {
-        background-position: 45% center !important;
-        padding: 58px 0;
-    }
-.common-banner-main.banner-main .banner-sec h1 {
-    font-size: 34px;
-    max-width: 200px;
+.common-banner-main.banner-main {background-position: 45% center !important;padding: 58px 0;}
+.common-banner-main.banner-main .banner-sec h1 {font-size: 34px;max-width: 200px;}
 }
-}
-
-
 .bennelong-funds-bg{background: url(../images/Oval_home.png) top right no-repeat;}
 .banner-main-circle::after{width: 767px;}
-
-
-.board-directors .our-people-image {
-   width: 100%;
-}
-
-.bennelong-about p {
-    margin-bottom: 30px;
-}
-
-.impact-side-bg {
-    background: url(../images/Oval_2.png) bottom right no-repeat;
-    background-color: #0B3847;
-    background-size: 302px !important;
-}
+.bennelong-about p {margin-bottom: 30px;}
+.impact-side-bg {background: url(../images/Oval_2.png) bottom right no-repeat;background-color: #0B3847;background-size: 302px !important;}
